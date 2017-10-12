@@ -1,0 +1,15 @@
+{
+  "name": "Bibliotec",
+  "version": "0.1-SNAPSHOT",
+  "description": "Bibliotec",
+  "main": "app/app.js",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
