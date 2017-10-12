@@ -1,1 +1,17 @@
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Bibliotecario.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Balconista.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QBalconista.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Item.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QUsuario.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/AcademPdco.java
 /home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Example.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QItem.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Usuario.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QPeriodico.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Livro.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QBibliotecario.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QAcademPdco.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Pessoa.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QPessoa.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/src/main/java/br/com/iss/Bibliotec/domain/model/Periodico.java
+/home/wd/ISS/Bibliotec/Bibliotec-domain/target/generated-sources/java/br/com/iss/Bibliotec/domain/model/QLivro.java

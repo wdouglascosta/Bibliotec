@@ -1,0 +1,39 @@
+//Gerado automaticamente por plugin da www.gumga.com.br munif@munifgebara.com.br
+
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+
+node [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+        shape = "record"
+]
+
+edge [
+        fontname = "Bitstream Vera Sans"
+        fontsize = 8
+]
+
+subgraph clusterbr_com_iss_Bibliotec_domain_model
+{
+label="br.com.iss.Bibliotec.domain.model";
+AcademPdco [label = "{AcademPdco|version:Integer\lmodalidade:String\l|}"]
+Usuario [label = "{Usuario|version:Integer\lsituacao:String\l|}"]
+Livro [label = "{Livro|version:Integer\lisbn:String\l|}"]
+Bibliotecario [label = "{Bibliotecario|version:Integer\lsetor:String\l|}"]
+Balconista [label = "{Balconista|version:Integer\lturnoTrabalho:String\l|}"]
+Pessoa [label = "{Pessoa|version:Integer\lnome:String\lcpf:String\lrg:String\ldataNasc:String\lemail:String\ltelefone:String\lsenha:String\lativo:boolean\l|}"]
+Periodico [label = "{Periodico|version:Integer\lissn:String\ltipoPeriodico:String\l|}"]
+Item [label = "{Item|version:Integer\lstatus:boolean\lnome:String\ledicao:Integer\lautor:String\leditora:String\lvolume:Integer\lanoPublicacao:Integer\lnumPaginas:Integer\lorigem:String\ltipoItem:String\l|}"]
+}
+
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] AcademPdco -> Item
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Usuario -> Pessoa
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Livro -> Item
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Bibliotecario -> Pessoa
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Balconista -> Pessoa
+edge [ arrowhead = "empty" headlabel = "" taillabel = ""] Periodico -> Item
+
+}
+
