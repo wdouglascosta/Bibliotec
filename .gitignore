@@ -1,1 +1,22 @@
-# Created by .ignore support plugin (hsz.mobi)
+target/
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.idea
+
+.idea
+*.iws
+*.iml
+*.ipr
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+node_modules/
+bower_components/
