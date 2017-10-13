@@ -17,6 +17,7 @@ public class BalconistaAPI extends GumgaAPI<Balconista, Long>{
     public BalconistaAPI(GumgaService<Balconista, Long> service) {
         super(service);
     }
+
 }
 
 

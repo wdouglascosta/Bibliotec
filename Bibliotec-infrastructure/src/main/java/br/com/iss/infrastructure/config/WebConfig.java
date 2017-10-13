@@ -105,7 +105,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements WebApplication
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //Para utilizar o Segurança você precisa descomentar a linha abaixo.
-        //registry.addInterceptor(gumgaRequestFilter());
+        registry.addInterceptor(gumgaRequestFilter());
     }
 
 }

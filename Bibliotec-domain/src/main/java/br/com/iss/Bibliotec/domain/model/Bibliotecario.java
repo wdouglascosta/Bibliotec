@@ -22,9 +22,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @SequenceGenerator(name = GumgaModel.SEQ_NAME, sequenceName = "SEQ_Bibliotecario")
 public class Bibliotecario extends Pessoa {
 
-    @Version
-    @Column(name = "version")
-    private Integer version;
 
     @Column(name = "setor")
 	private String setor;
