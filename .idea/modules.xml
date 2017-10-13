@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec.iml" filepath="$PROJECT_DIR$/Bibliotec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-api/Bibliotec-api.iml" filepath="$PROJECT_DIR$/Bibliotec-api/Bibliotec-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-application/Bibliotec-application.iml" filepath="$PROJECT_DIR$/Bibliotec-application/Bibliotec-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-boot/Bibliotec-boot.iml" filepath="$PROJECT_DIR$/Bibliotec-boot/Bibliotec-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-domain/Bibliotec-domain.iml" filepath="$PROJECT_DIR$/Bibliotec-domain/Bibliotec-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-gateway/Bibliotec-gateway.iml" filepath="$PROJECT_DIR$/Bibliotec-gateway/Bibliotec-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-infrastructure/Bibliotec-infrastructure.iml" filepath="$PROJECT_DIR$/Bibliotec-infrastructure/Bibliotec-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-presentation/Bibliotec-presentation.iml" filepath="$PROJECT_DIR$/Bibliotec-presentation/Bibliotec-presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bibliotec-presentation-webpack/Bibliotec-presentation-webpack.iml" filepath="$PROJECT_DIR$/Bibliotec-presentation-webpack/Bibliotec-presentation-webpack.iml" />
+    </modules>
+  </component>
+</project>

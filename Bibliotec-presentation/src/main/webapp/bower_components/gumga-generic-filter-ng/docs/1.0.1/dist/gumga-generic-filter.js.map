@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "sources": [
+    "../node_modules/browser-pack/_prelude.js",
+    "../src/generic-filter.js"
+  ],
+  "names": [],
+  "mappings": "AAAA;cCAA,mBAKE,eAAA,eACS,UAAA,MAAA,SACL,SAAI,MAAkB,MAAA,UACtB,QAAI,KAAgB,IACd,MAAO,MAAA,MAAX,gBACA,OAAA,EAAA,EAAA,UACA,OAAA,EAAA,EAAA,KACO,KAAA,KAAP,OAEF,OAAI,KAAe,IACb,KAAM,MAAA,MAAV,eACA,OAAA,EAAA,EAAA,SACA,OAAA,EAAA,EAAA,SACA,OAAA,GAAA,EAAA,KACO,IAAA,KAAP,OAEF,QAAI,KAAgB,IACd,MAAO,MAAA,MAAX,gBACA,OAAA,EAAA,EAAA,UACA,OAAA,EAAA,EAAA,UACA,OAAA,GAAA,EAAA,UACA,OAAA,GAAA,EAAA,KACO,KAAA,KAAP,UAGF,sBA3BJ,SAAA,mBA+BA,OAAA,0BAAA,OAAA,qBAAA",
+  "file": "generated.js",
+  "sourceRoot": "",
+  "sourcesContent": [
+    "(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require==\"function\"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error(\"Cannot find module '\"+o+\"'\");throw f.code=\"MODULE_NOT_FOUND\",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require==\"function\"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})",
+    "(function () {\n  'use strict';\n\n  GenericFilter.$inject = ['$filter'];\n\n  function GenericFilter($filter) {\n    return function (value, type) {\n      if (value == 'valor') return value\n      if (type == 'date') {\n        let date = value.split('')\n        date.splice(2, 0, '/')\n        date.splice(5, 0, '/')\n        return date.join('')\n      }\n      if (type == 'cpf') {\n        let cpf = value.split('')\n        cpf.splice(3, 0, '.')\n        cpf.splice(7, 0, '.')\n        cpf.splice(11, 0, '-')\n        return cpf.join('')\n      }\n      if (type == 'cnpj') {\n        let cnpj = value.split('')\n        cnpj.splice(2, 0, '.')\n        cnpj.splice(6, 0, '.')\n        cnpj.splice(10, 0, '/')\n        cnpj.splice(15, 0, '-')\n        return cnpj.join('')\n      }\n\n      return value\n    }\n  }\n\n  angular.module('gumga.genericfilter', [])\n    .filter('gumgaGenericFilter', GenericFilter);\n\n})()"
+  ]
+}
