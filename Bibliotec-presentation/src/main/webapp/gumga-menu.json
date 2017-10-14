@@ -1,6 +1,26 @@
 [
 	{
 		"type": "item",
+		"label": "Item",
+		"key": "CRUD-Item",
+		"children": [
+				{
+					"type": "item",
+					"label": "Inserir",
+					"state": "item.insert",
+					"key": "CRUD-Item"
+				},
+				{
+					"type": "item",
+					"label": "Listagem",
+					"state": "item.list",
+					"key": "CRUD-Item"
+				}
+			]
+	},
+
+	{
+		"type": "item",
 		"label": "Welcome",
 		"state": "welcome",
 		"icon": "home",

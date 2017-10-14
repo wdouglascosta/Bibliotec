@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel gmd">
+            <div class="panel-heading"><label class="control-label" gumga-translate-tag="pessoa"></label>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+
+                    <div class="col-sm-5">
+                        <a ui-sref="pessoa.insert" class="btn gmd raised btn-primary">
+                            <i class="glyphicon glyphicon-plus"></i>Novo
+                        </a>
+
+                        <button type="button" class="btn gmd raised btn-danger"
+                                ng-click="pessoa.methods.delete(selectedValues)"
+                                gumga-confirm="Deseja remover?">
+                            <i class="glyphicon glyphicon-trash"></i>Remover
+                        </button>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <gumga-query search="pessoa.methods.search(field,param)"
+                                     advanced-search="pessoa.methods.advancedSearch(param)"
+                                     saved-filters="pessoa.methods.getQuery(page)">
+                            <search-field label="nome"
+                                          field="nome"></search-field>
+                            <search-field label="cpf"
+                                          field="cpf"></search-field>
+                            <search-field label="rg"
+                                          field="rg"></search-field>
+                            <search-field label="dataNasc"
+                                          field="datanasc"></search-field>
+                            <search-field label="email"
+                                          field="email"></search-field>
+                            <search-field label="telefone"
+                                          field="telefone"></search-field>
+                            <search-field label="senha"
+                                          field="senha"></search-field>
+                            <search-field label="ativo"
+                                          field="ativo"></search-field>
+                            <advanced-search-field type="string" label="nome"
+                                                   field="nome"></advanced-search-field>
+                            <advanced-search-field type="string" label="cpf"
+                                                   field="cpf"></advanced-search-field>
+                            <advanced-search-field type="string" label="rg"
+                                                   field="rg"></advanced-search-field>
+                            <advanced-search-field type="string" label="dataNasc"
+                                                   field="datanasc"></advanced-search-field>
+                            <advanced-search-field type="string" label="email"
+                                                   field="email"></advanced-search-field>
+                            <advanced-search-field type="string" label="telefone"
+                                                   field="telefone"></advanced-search-field>
+                            <advanced-search-field type="string" label="senha"
+                                                   field="senha"></advanced-search-field>
+                            <advanced-search-field type="string" label="ativo"
+                                                   field="ativo"></advanced-search-field>
+                        </gumga-query>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <gumga-query-action
+                                entity="pessoa"
+                                selected="selectedValues"
+                                query="query"
+                                beyond="beyond"
+                                actions="actions"
+                                on-action="action(queryaction)">
+                        </gumga-query-action>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <gumga-list class="table-striped table-condensed"
+                                    sort="pessoa.methods.sort(field, dir)"
+                                    data="pessoa.data"
+                                    configuration="tableConfig"
+                                    page-size="pessoa.pageSize"
+                                    page-position="bottom"
+                                    page-align="flex-end"
+                                    count="pessoa.count"
+                                    page-model="page"
+                                    on-page-change="pessoa.methods.get(page, pageSize)">
+                        </gumga-list>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

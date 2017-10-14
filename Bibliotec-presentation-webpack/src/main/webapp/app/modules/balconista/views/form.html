@@ -1,0 +1,202 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel gmd">
+            <div class="panel-heading"><label class="control-label" gumga-translate-tag="balconista.title"></label>
+            </div>
+            <div class="panel-body">
+                <form name="BalconistaForm" gumga-form novalidate>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="nome"
+                        gumga-error
+                        ng-model="balconista.data.nome"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.nome">nome</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="cpf"
+                        gumga-error
+                        ng-model="balconista.data.cpf"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.cpf">cpf</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="rg"
+                        gumga-error
+                        ng-model="balconista.data.rg"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.rg">rg</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="dataNasc"
+                        gumga-error
+                        ng-model="balconista.data.dataNasc"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.dataNasc">dataNasc</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="email"
+                        gumga-error
+                        ng-model="balconista.data.email"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.email">email</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="telefone"
+                        gumga-error
+                        ng-model="balconista.data.telefone"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.telefone">telefone</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="senha"
+                        gumga-error
+                        ng-model="balconista.data.senha"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.senha">senha</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="ativo"
+                        gumga-error
+                        ng-model="balconista.data.ativo"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.ativo">ativo</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="turnoTrabalho"
+                        gumga-error
+                        ng-model="balconista.data.turnoTrabalho"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="balconista.turnoTrabalho">turnoTrabalho</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+                    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+                    <gumga-form-buttons
+                            class="gmd raised"
+                            back="balconista.list"
+                            submit="balconista.methods.put(balconista.data)"
+                            position="right"
+                            valid="BalconistaForm.$valid"
+                            confirm-dirty="true"
+                            continue="continue">
+                    </gumga-form-buttons>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

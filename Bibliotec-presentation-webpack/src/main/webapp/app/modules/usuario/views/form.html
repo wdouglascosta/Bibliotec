@@ -1,0 +1,202 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel gmd">
+            <div class="panel-heading"><label class="control-label" gumga-translate-tag="usuario.title"></label>
+            </div>
+            <div class="panel-body">
+                <form name="UsuarioForm" gumga-form novalidate>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="nome"
+                        gumga-error
+                        ng-model="usuario.data.nome"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.nome">nome</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="cpf"
+                        gumga-error
+                        ng-model="usuario.data.cpf"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.cpf">cpf</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="rg"
+                        gumga-error
+                        ng-model="usuario.data.rg"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.rg">rg</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="dataNasc"
+                        gumga-error
+                        ng-model="usuario.data.dataNasc"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.dataNasc">dataNasc</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="email"
+                        gumga-error
+                        ng-model="usuario.data.email"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.email">email</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="telefone"
+                        gumga-error
+                        ng-model="usuario.data.telefone"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.telefone">telefone</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="senha"
+                        gumga-error
+                        ng-model="usuario.data.senha"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.senha">senha</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="ativo"
+                        gumga-error
+                        ng-model="usuario.data.ativo"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.ativo">ativo</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="situacao"
+                        gumga-error
+                        ng-model="usuario.data.situacao"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="usuario.situacao">situacao</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+                    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+                    <gumga-form-buttons
+                            class="gmd raised"
+                            back="usuario.list"
+                            submit="usuario.methods.put(usuario.data)"
+                            position="right"
+                            valid="UsuarioForm.$valid"
+                            confirm-dirty="true"
+                            continue="continue">
+                    </gumga-form-buttons>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
