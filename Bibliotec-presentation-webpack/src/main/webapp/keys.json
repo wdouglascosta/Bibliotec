@@ -3,4 +3,11 @@
   "CUSTOMFIELDS",
   "TAGS",
   "CONFIGURATION"
+,"CRUD-Item"
+,"CRUD-Balconista"
+,"CRUD-Bibliotecario"
+,"CRUD-Livro"
+,"CRUD-Periodico"
+,"CRUD-Pessoa"
+,"CRUD-Usuario"
 ]

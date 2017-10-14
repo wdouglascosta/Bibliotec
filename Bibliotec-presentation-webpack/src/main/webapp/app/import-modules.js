@@ -5,4 +5,11 @@ require("./modules/gumgatagdefinition/module");
 require("./modules/gumgacustomfield/module");
 require("./modules/welcome/module");
 require("./modules/account/module");
+require('./modules/item/module');
+require('./modules/balconista/module');
+require('./modules/bibliotecario/module');
+require('./modules/livro/module');
+require('./modules/periodico/module');
+require('./modules/pessoa/module');
+require('./modules/usuario/module');
 //FIMREQUIRE

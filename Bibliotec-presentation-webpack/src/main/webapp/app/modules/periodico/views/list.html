@@ -1,0 +1,110 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel gmd">
+            <div class="panel-heading"><label class="control-label" gumga-translate-tag="periodico"></label>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+
+                    <div class="col-sm-5">
+                        <a ui-sref="periodico.insert" class="btn gmd raised btn-primary">
+                            <i class="glyphicon glyphicon-plus"></i>Novo
+                        </a>
+
+                        <button type="button" class="btn gmd raised btn-danger"
+                                ng-click="periodico.methods.delete(selectedValues)"
+                                gumga-confirm="Deseja remover?">
+                            <i class="glyphicon glyphicon-trash"></i>Remover
+                        </button>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <gumga-query search="periodico.methods.search(field,param)"
+                                     advanced-search="periodico.methods.advancedSearch(param)"
+                                     saved-filters="periodico.methods.getQuery(page)">
+                            <search-field label="status"
+                                          field="status"></search-field>
+                            <search-field label="nome"
+                                          field="nome"></search-field>
+                            <search-field label="edicao"
+                                          field="edicao"></search-field>
+                            <search-field label="autor"
+                                          field="autor"></search-field>
+                            <search-field label="editora"
+                                          field="editora"></search-field>
+                            <search-field label="volume"
+                                          field="volume"></search-field>
+                            <search-field label="anoPublicacao"
+                                          field="anopublicacao"></search-field>
+                            <search-field label="numPaginas"
+                                          field="numpaginas"></search-field>
+                            <search-field label="origem"
+                                          field="origem"></search-field>
+                            <search-field label="tipoItem"
+                                          field="tipoitem"></search-field>
+                            <search-field label="issn"
+                                          field="issn"></search-field>
+                            <search-field label="tipoPeriodico"
+                                          field="tipoperiodico"></search-field>
+                            <advanced-search-field type="string" label="status"
+                                                   field="status"></advanced-search-field>
+                            <advanced-search-field type="string" label="nome"
+                                                   field="nome"></advanced-search-field>
+                            <advanced-search-field type="number" label="edicao"
+                                                   field="edicao"></advanced-search-field>
+                            <advanced-search-field type="string" label="autor"
+                                                   field="autor"></advanced-search-field>
+                            <advanced-search-field type="string" label="editora"
+                                                   field="editora"></advanced-search-field>
+                            <advanced-search-field type="number" label="volume"
+                                                   field="volume"></advanced-search-field>
+                            <advanced-search-field type="number" label="anoPublicacao"
+                                                   field="anopublicacao"></advanced-search-field>
+                            <advanced-search-field type="number" label="numPaginas"
+                                                   field="numpaginas"></advanced-search-field>
+                            <advanced-search-field type="string" label="origem"
+                                                   field="origem"></advanced-search-field>
+                            <advanced-search-field type="string" label="tipoItem"
+                                                   field="tipoitem"></advanced-search-field>
+                            <advanced-search-field type="string" label="issn"
+                                                   field="issn"></advanced-search-field>
+                            <advanced-search-field type="string" label="tipoPeriodico"
+                                                   field="tipoperiodico"></advanced-search-field>
+                        </gumga-query>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <gumga-query-action
+                                entity="periodico"
+                                selected="selectedValues"
+                                query="query"
+                                beyond="beyond"
+                                actions="actions"
+                                on-action="action(queryaction)">
+                        </gumga-query-action>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <gumga-list class="table-striped table-condensed"
+                                    sort="periodico.methods.sort(field, dir)"
+                                    data="periodico.data"
+                                    configuration="tableConfig"
+                                    page-size="periodico.pageSize"
+                                    page-position="bottom"
+                                    page-align="flex-end"
+                                    count="periodico.count"
+                                    page-model="page"
+                                    on-page-change="periodico.methods.get(page, pageSize)">
+                        </gumga-list>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

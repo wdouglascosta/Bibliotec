@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-application" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-boot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-infrastructure" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-presentation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Bibliotec-presentation-webpack" charset="UTF-8" />
+  </component>
+</project>

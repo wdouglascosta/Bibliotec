@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Bibliotec-api" />
+        <module name="Bibliotec-application" />
+        <module name="Bibliotec-boot" />
+        <module name="Bibliotec-domain" />
+        <module name="Bibliotec-gateway" />
+        <module name="Bibliotec-infrastructure" />
+        <module name="Bibliotec-presentation" />
+        <module name="Bibliotec-presentation-webpack" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Bibliotec" target="1.5" />
+      <module name="Bibliotec-api" target="1.8" />
+      <module name="Bibliotec-application" target="1.8" />
+      <module name="Bibliotec-boot" target="1.8" />
+      <module name="Bibliotec-domain" target="1.8" />
+      <module name="Bibliotec-gateway" target="1.8" />
+      <module name="Bibliotec-infrastructure" target="1.8" />
+      <module name="Bibliotec-presentation" target="1.8" />
+      <module name="Bibliotec-presentation-webpack" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

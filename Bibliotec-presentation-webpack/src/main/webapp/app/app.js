@@ -43,6 +43,13 @@ angular.module('app.core', [
   ,'app.gumgatagdefinition'
   ,'app.gumgacustomfield'
   ,'app.welcome'
+        ,'app.item'
+        ,'app.balconista'
+        ,'app.bibliotecario'
+        ,'app.livro'
+        ,'app.periodico'
+        ,'app.pessoa'
+        ,'app.usuario'
   //FIMINJECTIONS
   ])
   .run(['$rootScope', '$timeout', function($rootScope, $timeout){
@@ -105,6 +112,62 @@ angular.module('app.core', [
            url: '/gumgacustomfield',
            templateUrl: tempĺateBase
       })
+        .state('item', {
+        data: {
+            id: 1
+        }, 
+            url: '/item',
+            templateUrl: tempĺateBase
+        })
+
+        .state('balconista', {
+        data: {
+            id: 1
+        }, 
+            url: '/balconista',
+            templateUrl: tempĺateBase
+        })
+
+        .state('bibliotecario', {
+        data: {
+            id: 1
+        }, 
+            url: '/bibliotecario',
+            templateUrl: tempĺateBase
+        })
+
+        .state('livro', {
+        data: {
+            id: 1
+        }, 
+            url: '/livro',
+            templateUrl: tempĺateBase
+        })
+
+        .state('periodico', {
+        data: {
+            id: 1
+        }, 
+            url: '/periodico',
+            templateUrl: tempĺateBase
+        })
+
+        .state('pessoa', {
+        data: {
+            id: 1
+        }, 
+            url: '/pessoa',
+            templateUrl: tempĺateBase
+        })
+
+        .state('usuario', {
+        data: {
+            id: 1
+        }, 
+            url: '/usuario',
+            templateUrl: tempĺateBase
+        })
+
       //FIMROUTE
 
 

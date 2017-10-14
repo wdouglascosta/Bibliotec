@@ -1,0 +1,37 @@
+{
+  "name": "gumga-generic-filter-ng",
+  "version": "1.0.1",
+  "description": "Gumga Generic Filter",
+  "main": "./src/generic-filter.js",
+  "authors": [
+    "Gumga Tecnologia da Informação S/A"
+  ],
+  "license": "LGPL-3.0",
+  "keywords": [
+    "gumga",
+    "generic",
+    "filter",
+    "angular",
+    "1.x"
+  ],
+  "homepage": "https://github.com/guiseek/gumga-generic-filter-ng",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8"
+  },
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.1",
+    "commit": "1ce31d5730cf636b124defc838c1a6806dde577f"
+  },
+  "_source": "https://github.com/GUMGA/gumga-generic-filter-ng.git",
+  "_target": "*",
+  "_originalSource": "gumga-generic-filter-ng"
+}
