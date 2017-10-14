@@ -51,7 +51,7 @@
                             <executable>npm</executable>
                             <arguments>
                                 <argument>install</argument>
-                                <argument>--allow-root</argument>
+                                <!--<argument>&#45;&#45;allow-root</argument>-->
                             </arguments>
                         </configuration>
                         <goals>
@@ -67,7 +67,7 @@
                             <arguments>
                                 <argument>run</argument>
                                 <argument>prod</argument>
-                                <argument>--allow-root</argument>
+                                <!--<argument>&#45;&#45;allow-root</argument>-->
                             </arguments>
                         </configuration>
                         <goals>

@@ -22,9 +22,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @SequenceGenerator(name = GumgaModel.SEQ_NAME, sequenceName = "SEQ_AcademPdco")
 public class AcademPdco extends Item {
 
-    @Version
-    @Column(name = "version")
-    private Integer version;
 
     @Column(name = "modalidade")
 	private String modalidade;

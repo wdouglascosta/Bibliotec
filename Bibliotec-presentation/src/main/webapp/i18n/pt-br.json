@@ -12,6 +12,25 @@
   ,"edit": "Editar Coisa"
   ,"insert": "Inserir Coisa"
   }
+    ,"item":{
+        "title":"Item"
+        ,"menulabel": "Item"
+        ,"edit": "Editar Item"
+        ,"insert": "Inserir Item"
+        ,"list": "Consulta Item"
+        ,"id": "id"
+        ,"status":"Status"
+        ,"nome":"Nome"
+        ,"edicao":"Edicao"
+        ,"autor":"Autor"
+        ,"editora":"Editora"
+        ,"volume":"Volume"
+        ,"anopublicacao":"AnoPublicacao"
+        ,"numpaginas":"NumPaginas"
+        ,"origem":"Origem"
+        ,"tipoitem":"TipoItem"
+    }
+
 ,"address": {
   "cep": "CEP"
 ,"numero": "Número"

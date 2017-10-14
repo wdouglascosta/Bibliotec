@@ -41,6 +41,7 @@ define(function(require) {
   require('app/modules/gumgatagdefinition/module');
   require('app/modules/gumgacustomfield/module');
   require('app/modules/welcome/module');
+    require('app/modules/item/module');
   //FIMREQUIRE
 
   angular.module('gumga.core', [
@@ -81,6 +82,7 @@ define(function(require) {
     ,'app.gumgatagdefinition'
     ,'app.gumgacustomfield'
     ,'app.welcome'
+        ,'app.item'
   //FIMINJECTIONS
     ])
     .config(function($stateProvider, $urlRouterProvider, $httpProvider, $injector) {
@@ -134,6 +136,14 @@ define(function(require) {
              url: '/gumgacustomfield',
              templateUrl: tempĺateBase
         })
+        .state('item', {
+        data: {
+            id: 1
+        }, 
+            url: '/item',
+            templateUrl: tempĺateBase
+        })
+
         //FIMROUTE
 
 

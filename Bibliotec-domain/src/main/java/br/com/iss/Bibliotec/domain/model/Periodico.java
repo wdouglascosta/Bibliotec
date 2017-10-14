@@ -22,9 +22,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @SequenceGenerator(name = GumgaModel.SEQ_NAME, sequenceName = "SEQ_Periodico")
 public class Periodico extends Item {
 
-    @Version
-    @Column(name = "version")
-    private Integer version;
 
     @Column(name = "issn")
 	private String issn;
