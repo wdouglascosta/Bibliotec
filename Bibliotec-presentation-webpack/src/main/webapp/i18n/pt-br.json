@@ -143,6 +143,26 @@
         ,"situacao":"Situacao"
     }
 
+    ,"academpdco":{
+        "title":"AcademPdco"
+        ,"menulabel": "AcademPdco"
+        ,"edit": "Editar AcademPdco"
+        ,"insert": "Inserir AcademPdco"
+        ,"list": "Consulta AcademPdco"
+        ,"id": "id"
+        ,"status":"Status"
+        ,"nome":"Nome"
+        ,"edicao":"Edicao"
+        ,"autor":"Autor"
+        ,"editora":"Editora"
+        ,"volume":"Volume"
+        ,"anopublicacao":"AnoPublicacao"
+        ,"numpaginas":"NumPaginas"
+        ,"origem":"Origem"
+        ,"tipoitem":"TipoItem"
+        ,"modalidade":"Modalidade"
+    }
+
 ,"address": {
   "cep": "CEP"
 ,"numero": "Número"

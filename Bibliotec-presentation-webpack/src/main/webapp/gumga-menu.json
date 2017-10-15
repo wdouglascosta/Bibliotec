@@ -1,6 +1,26 @@
 [
 	{
 		"type": "item",
+		"label": "AcademPdco",
+		"key": "CRUD-AcademPdco",
+		"children": [
+				{
+					"type": "item",
+					"label": "Inserir",
+					"state": "academpdco.insert",
+					"key": "CRUD-AcademPdco"
+				},
+				{
+					"type": "item",
+					"label": "Listagem",
+					"state": "academpdco.list",
+					"key": "CRUD-AcademPdco"
+				}
+			]
+	},
+
+	{
+		"type": "item",
 		"label": "Usuario",
 		"key": "CRUD-Usuario",
 		"children": [

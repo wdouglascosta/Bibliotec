@@ -50,6 +50,7 @@ angular.module('app.core', [
         ,'app.periodico'
         ,'app.pessoa'
         ,'app.usuario'
+        ,'app.academpdco'
   //FIMINJECTIONS
   ])
   .run(['$rootScope', '$timeout', function($rootScope, $timeout){
@@ -165,6 +166,14 @@ angular.module('app.core', [
             id: 1
         }, 
             url: '/usuario',
+            templateUrl: tempĺateBase
+        })
+
+        .state('academpdco', {
+        data: {
+            id: 1
+        }, 
+            url: '/academpdco',
             templateUrl: tempĺateBase
         })
 
