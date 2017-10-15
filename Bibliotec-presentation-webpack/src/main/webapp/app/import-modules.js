@@ -12,4 +12,5 @@ require('./modules/livro/module');
 require('./modules/periodico/module');
 require('./modules/pessoa/module');
 require('./modules/usuario/module');
+require('./modules/academpdco/module');
 //FIMREQUIRE
