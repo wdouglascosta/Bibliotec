@@ -1,0 +1,86 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel gmd">
+            <div class="panel-heading"><label class="control-label" gumga-translate-tag="reserva"></label>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+
+                    <div class="col-sm-5">
+                        <a ui-sref="reserva.insert" class="btn gmd raised btn-primary">
+                            <i class="glyphicon glyphicon-plus"></i>Novo
+                        </a>
+
+                        <button type="button" class="btn gmd raised btn-danger"
+                                ng-click="reserva.methods.delete(selectedValues)"
+                                gumga-confirm="Deseja remover?">
+                            <i class="glyphicon glyphicon-trash"></i>Remover
+                        </button>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <gumga-query search="reserva.methods.search(field,param)"
+                                     advanced-search="reserva.methods.advancedSearch(param)"
+                                     saved-filters="reserva.methods.getQuery(page)">
+                            <search-field label="dataReserva"
+                                          field="datareserva"></search-field>
+                            <search-field label="dataRetirada"
+                                          field="dataretirada"></search-field>
+                            <search-field label="item"
+                                          field="item"></search-field>
+                            <search-field label="usuario"
+                                          field="usuario"></search-field>
+                            <search-field label="statusReserva"
+                                          field="statusreserva"></search-field>
+                            <search-field label="dataDisponibilizacao"
+                                          field="datadisponibilizacao"></search-field>
+                            <advanced-search-field type="string" label="dataReserva"
+                                                   field="datareserva"></advanced-search-field>
+                            <advanced-search-field type="string" label="dataRetirada"
+                                                   field="dataretirada"></advanced-search-field>
+                            <advanced-search-field type="string" label="item"
+                                                   field="item"></advanced-search-field>
+                            <advanced-search-field type="string" label="usuario"
+                                                   field="usuario"></advanced-search-field>
+                            <advanced-search-field type="string" label="statusReserva"
+                                                   field="statusreserva"></advanced-search-field>
+                            <advanced-search-field type="string" label="dataDisponibilizacao"
+                                                   field="datadisponibilizacao"></advanced-search-field>
+                        </gumga-query>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <gumga-query-action
+                                entity="reserva"
+                                selected="selectedValues"
+                                query="query"
+                                beyond="beyond"
+                                actions="actions"
+                                on-action="action(queryaction)">
+                        </gumga-query-action>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <gumga-list class="table-striped table-condensed"
+                                    sort="reserva.methods.sort(field, dir)"
+                                    data="reserva.data"
+                                    configuration="tableConfig"
+                                    page-size="reserva.pageSize"
+                                    page-position="bottom"
+                                    page-align="flex-end"
+                                    count="reserva.count"
+                                    page-model="page"
+                                    on-page-change="reserva.methods.get(page, pageSize)">
+                        </gumga-list>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

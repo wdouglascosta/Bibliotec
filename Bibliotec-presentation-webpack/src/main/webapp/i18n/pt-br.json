@@ -163,6 +163,38 @@
         ,"modalidade":"Modalidade"
     }
 
+    ,"emprestimo":{
+        "title":"Emprestimo"
+        ,"menulabel": "Emprestimo"
+        ,"edit": "Editar Emprestimo"
+        ,"insert": "Inserir Emprestimo"
+        ,"list": "Consulta Emprestimo"
+        ,"id": "id"
+        ,"listalivros":"ListaLivros"
+        ,"usuario":"Usuario"
+        ,"situaçãoemp":"SituaçãoEmp"
+        ,"qtderenovacoes":"QtdeRenovacoes"
+        ,"dataemprestimo":"DataEmprestimo"
+        ,"datadevprevista":"DataDevPrevista"
+        ,"datadevolucao":"DataDevolucao"
+        ,"dataretirada":"DataRetirada"
+    }
+
+    ,"reserva":{
+        "title":"Reserva"
+        ,"menulabel": "Reserva"
+        ,"edit": "Editar Reserva"
+        ,"insert": "Inserir Reserva"
+        ,"list": "Consulta Reserva"
+        ,"id": "id"
+        ,"datareserva":"DataReserva"
+        ,"dataretirada":"DataRetirada"
+        ,"item":"Item"
+        ,"usuario":"Usuario"
+        ,"statusreserva":"StatusReserva"
+        ,"datadisponibilizacao":"DataDisponibilizacao"
+    }
+
 ,"address": {
   "cep": "CEP"
 ,"numero": "Número"

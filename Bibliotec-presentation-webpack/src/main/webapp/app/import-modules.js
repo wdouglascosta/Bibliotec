@@ -13,4 +13,6 @@ require('./modules/periodico/module');
 require('./modules/pessoa/module');
 require('./modules/usuario/module');
 require('./modules/academpdco/module');
+require('./modules/emprestimo/module');
+require('./modules/reserva/module');
 //FIMREQUIRE
