@@ -30,16 +30,30 @@ function UsuarioListController($scope, UsuarioService, gumgaController) {
   }
 
   $scope.tableConfig = {
-    columns: 'nome ,button',
+    columns: 'nome ,rg, button',
     checkbox: true,
     selection: 'multi',
     materialTheme: true,
     itemsPerPage: [5, 10, 15, 30],
-    columnsConfig: [{
+    columnsConfig: [
+        {
+            name: 'id',
+            title: '<span gumga-translate-tag="usuario.id"> id </span>',
+            content: '{{$value.id }}',
+            sortField: 'id'
+        },
+
+
+        {
       name: 'nome',
       title: '<span gumga-translate-tag="usuario.nome"> nome </span>',
       content: '{{$value.nome }}',
       sortField: 'nome'
+    }, {
+        name: 'RG',
+        title: '<span gumga-translate-tag="usuario.rg"> rg </span>',
+        content: '{{$value.rg }}',
+        sortField: 'rg'
     }, {
       name: 'button',
       title: ' ',

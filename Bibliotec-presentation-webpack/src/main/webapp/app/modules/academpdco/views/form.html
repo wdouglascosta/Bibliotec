@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
         <div class="panel gmd">
+
             <div class="panel-heading"><label class="control-label" gumga-translate-tag="academpdco.title"></label>
             </div>
             <div class="panel-body">
@@ -11,8 +12,8 @@
 		
             <gmd-input>
                 <input
-                        class="form-control gmd"
-                        type="text"
+                        class="checkbox-inline"
+                        type="checkbox"
                         name="status"
                         gumga-error
                         ng-model="academpdco.data.status"
@@ -26,7 +27,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
         <div class="form-group">
 		
             <gmd-input>
@@ -44,9 +45,40 @@
             </gmd-input>
         </div>
     </div>
+
+
+    <div class="col-md-6">
+        <div class="form-group">
+
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="autor"
+                        gumga-error
+                        ng-model="academpdco.data.autor"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="academpdco.autor">autor</label>
+            </gmd-input>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 </div>
 <div class="row">
-    <div class="col-md-12">
+
+
+
+    <div class="col-md-2">
         <div class="form-group">
 		
             <gmd-input>
@@ -64,51 +96,11 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+
+    <div class="col-md-2">
         <div class="form-group">
-		
-            <gmd-input>
-                <input
-                        class="form-control gmd"
-                        type="text"
-                        name="autor"
-                        gumga-error
-                        ng-model="academpdco.data.autor"
-                />
-                <span class="bar"></span>
-                <label
-                        class="control-label"
-                        gumga-translate-tag="academpdco.autor">autor</label>
-            </gmd-input>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="form-group">
-		
-            <gmd-input>
-                <input
-                        class="form-control gmd"
-                        type="text"
-                        name="editora"
-                        gumga-error
-                        ng-model="academpdco.data.editora"
-                />
-                <span class="bar"></span>
-                <label
-                        class="control-label"
-                        gumga-translate-tag="academpdco.editora">editora</label>
-            </gmd-input>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -124,11 +116,29 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+    <div class="col-md-4">
         <div class="form-group">
-		
+
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="editora"
+                        gumga-error
+                        ng-model="academpdco.data.editora"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="academpdco.editora">editora</label>
+            </gmd-input>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -144,11 +154,10 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+    <div class="col-md-2">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -164,9 +173,11 @@
             </gmd-input>
         </div>
     </div>
+
 </div>
+
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-4">
         <div class="form-group">
 		
             <gmd-input>
@@ -184,11 +195,11 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+
+    <div class="col-md-4">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -204,11 +215,10 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+    <div class="col-md-4">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -224,7 +234,9 @@
             </gmd-input>
         </div>
     </div>
+
 </div>
+
                     <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
                     <gumga-form-buttons
                             class="gmd raised"
