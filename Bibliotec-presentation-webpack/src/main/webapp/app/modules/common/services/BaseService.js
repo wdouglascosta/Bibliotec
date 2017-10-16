@@ -3,10 +3,10 @@ const BaseService = ($http, GumgaRest, $q) => {
 var greeting;
 
     Service.getGumgaMenu = () => {
-        if () {
-            greeting = "Good day";
-            console.log(greeting)
-        }
+        // if () {
+        //     greeting = "Good day";
+        //     console.log(greeting)
+        // }
 console.log("teste ------------------------------------------------------------")
         // return $http.get('./gumga-menu.json')
         return $http.get('./menu-usuario.json')
