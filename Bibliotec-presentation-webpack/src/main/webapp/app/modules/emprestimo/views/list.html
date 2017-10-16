@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel gmd">
+            <div class="panel-heading"><label class="control-label" gumga-translate-tag="emprestimo"></label>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+
+                    <div class="col-sm-5">
+                        <a ui-sref="emprestimo.insert" class="btn gmd raised btn-primary">
+                            <i class="glyphicon glyphicon-plus"></i>Novo
+                        </a>
+
+                        <button type="button" class="btn gmd raised btn-danger"
+                                ng-click="emprestimo.methods.delete(selectedValues)"
+                                gumga-confirm="Deseja remover?">
+                            <i class="glyphicon glyphicon-trash"></i>Remover
+                        </button>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <gumga-query search="emprestimo.methods.search(field,param)"
+                                     advanced-search="emprestimo.methods.advancedSearch(param)"
+                                     saved-filters="emprestimo.methods.getQuery(page)">
+                            <search-field label="listaLivros"
+                                          field="listalivros"></search-field>
+                            <search-field label="usuario"
+                                          field="usuario"></search-field>
+                            <search-field label="situaçãoEmp"
+                                          field="situaçãoemp"></search-field>
+                            <search-field label="qtdeRenovacoes"
+                                          field="qtderenovacoes"></search-field>
+                            <search-field label="dataEmprestimo"
+                                          field="dataemprestimo"></search-field>
+                            <search-field label="dataDevPrevista"
+                                          field="datadevprevista"></search-field>
+                            <search-field label="dataDevolucao"
+                                          field="datadevolucao"></search-field>
+                            <search-field label="dataRetirada"
+                                          field="dataretirada"></search-field>
+                            <advanced-search-field type="string" label="listaLivros"
+                                                   field="listalivros"></advanced-search-field>
+                            <advanced-search-field type="string" label="usuario"
+                                                   field="usuario"></advanced-search-field>
+                            <advanced-search-field type="string" label="situaçãoEmp"
+                                                   field="situaçãoemp"></advanced-search-field>
+                            <advanced-search-field type="number" label="qtdeRenovacoes"
+                                                   field="qtderenovacoes"></advanced-search-field>
+                            <advanced-search-field type="string" label="dataEmprestimo"
+                                                   field="dataemprestimo"></advanced-search-field>
+                            <advanced-search-field type="string" label="dataDevPrevista"
+                                                   field="datadevprevista"></advanced-search-field>
+                            <advanced-search-field type="string" label="dataDevolucao"
+                                                   field="datadevolucao"></advanced-search-field>
+                            <advanced-search-field type="string" label="dataRetirada"
+                                                   field="dataretirada"></advanced-search-field>
+                        </gumga-query>
+                    </div>
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <gumga-query-action
+                                entity="emprestimo"
+                                selected="selectedValues"
+                                query="query"
+                                beyond="beyond"
+                                actions="actions"
+                                on-action="action(queryaction)">
+                        </gumga-query-action>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <gumga-list class="table-striped table-condensed"
+                                    sort="emprestimo.methods.sort(field, dir)"
+                                    data="emprestimo.data"
+                                    configuration="tableConfig"
+                                    page-size="emprestimo.pageSize"
+                                    page-position="bottom"
+                                    page-align="flex-end"
+                                    count="emprestimo.count"
+                                    page-model="page"
+                                    on-page-change="emprestimo.methods.get(page, pageSize)">
+                        </gumga-list>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,6 +3,7 @@ require('./import-libs');
 require('./import-styles');
 require('./import-modules');
 
+
 angular.module('gumga.core', [
       'gumga.rest',
       'gumga.controller',
@@ -51,6 +52,8 @@ angular.module('app.core', [
         ,'app.pessoa'
         ,'app.usuario'
         ,'app.academpdco'
+        ,'app.emprestimo'
+        ,'app.reserva'
   //FIMINJECTIONS
   ])
   .run(['$rootScope', '$timeout', function($rootScope, $timeout){
@@ -174,6 +177,22 @@ angular.module('app.core', [
             id: 1
         }, 
             url: '/academpdco',
+            templateUrl: tempĺateBase
+        })
+
+        .state('emprestimo', {
+        data: {
+            id: 1
+        }, 
+            url: '/emprestimo',
+            templateUrl: tempĺateBase
+        })
+
+        .state('reserva', {
+        data: {
+            id: 1
+        }, 
+            url: '/reserva',
             templateUrl: tempĺateBase
         })
 

@@ -11,8 +11,8 @@
 		
             <gmd-input>
                 <input
-                        class="form-control gmd"
-                        type="text"
+                        class="checkbox-inline"
+                        type="checkbox"
                         name="status"
                         gumga-error
                         ng-model="livro.data.status"
@@ -25,8 +25,9 @@
         </div>
     </div>
 </div>
+                    <!--inicio da linha -------------------------------------------------------->
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
         <div class="form-group">
 		
             <gmd-input>
@@ -44,31 +45,10 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+    <div class="col-md-6">
         <div class="form-group">
-		
-            <gmd-input>
-                <input
-                        class="form-control gmd"
-                        type="text"
-                        name="edicao"
-                        gumga-error
-                        ng-model="livro.data.edicao"
-                />
-                <span class="bar"></span>
-                <label
-                        class="control-label"
-                        gumga-translate-tag="livro.edicao">edicao</label>
-            </gmd-input>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -84,31 +64,38 @@
             </gmd-input>
         </div>
     </div>
-</div>
+
+
+
+
+
+
+
+
+</div><!--  fim da linha ------------------------------------------------------------------->
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-2">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
-                        name="editora"
+                        name="edicao"
                         gumga-error
-                        ng-model="livro.data.editora"
+                        ng-model="livro.data.edicao"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="livro.editora">editora</label>
+                        gumga-translate-tag="livro.edicao">edicao</label>
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+    <div class="col-md-2">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -124,11 +111,31 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+
+    <div class="col-md-4">
         <div class="form-group">
-		
+
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="editora"
+                        gumga-error
+                        ng-model="livro.data.editora"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="livro.editora">editora</label>
+            </gmd-input>
+        </div>
+    </div>
+
+
+    <div class="col-md-2">
+        <div class="form-group">
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -144,11 +151,10 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+    <div class="col-md-2">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -164,11 +170,17 @@
             </gmd-input>
         </div>
     </div>
+
+
+
+    <!--fim da linha ----------------------------------------------------------------------->
 </div>
 <div class="row">
-    <div class="col-md-12">
+
+
+    <div class="col-md-4">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -184,11 +196,11 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+
+    <div class="col-md-4">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -204,11 +216,10 @@
             </gmd-input>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
+
+    <div class="col-md-4">
         <div class="form-group">
-		
+
             <gmd-input>
                 <input
                         class="form-control gmd"
@@ -224,7 +235,7 @@
             </gmd-input>
         </div>
     </div>
-</div>
+
                     <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
                     <gumga-form-buttons
                             class="gmd raised"

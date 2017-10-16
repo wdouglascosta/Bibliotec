@@ -1,0 +1,56 @@
+[
+	{
+		"type": "item",
+		"label": "Reserva",
+		"key": "CRUD-Reserva",
+		"children": [
+				{
+					"type": "item",
+					"label": "Inserir",
+					"state": "reserva.insert",
+					"key": "CRUD-Reserva"
+				},
+				{
+					"type": "item",
+					"label": "Listagem",
+					"state": "reserva.list",
+					"key": "CRUD-Reserva"
+				}
+			]
+	},
+
+	{
+		"type": "item",
+		"label": "Emprestimo",
+		"key": "CRUD-Emprestimo",
+		"children": [
+				{
+					"type": "item",
+					"label": "Inserir",
+					"state": "emprestimo.insert",
+					"key": "CRUD-Emprestimo"
+				},
+				{
+					"type": "item",
+					"label": "Listagem",
+					"state": "emprestimo.list",
+					"key": "CRUD-Emprestimo"
+				}
+			]
+	},
+
+	{
+		"type": "item",
+		"label": "Listar Itens",
+		"state": "item.list",
+		"key": "CRUD-Item"
+	},
+
+	{
+		"type": "item",
+		"label": "Página Inicial",
+		"state": "welcome.home",
+		"icon": "home",
+		"key": "CRUD-BASE"
+	}
+]

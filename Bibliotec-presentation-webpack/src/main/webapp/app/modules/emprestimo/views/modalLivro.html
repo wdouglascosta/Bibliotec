@@ -1,80 +1,50 @@
-<div class="row">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="panel gmd">
-            <div class="panel-heading"><label class="control-label" gumga-translate-tag="periodico.title"></label>
-            </div>
-            <div class="panel-body">
-                <form name="PeriodicoForm" gumga-form novalidate>
+	<form name="Modal">
+	    <div class="modal-header">
+	        <h3 class="modal-title" gumga-translate-tag="livro.title"></h3>
+	    </div>
+	    <div class="modal-body" style="overflow: auto">
 <div class="row">
     <div class="col-md-12">
         <div class="form-group">
 		
             <gmd-input>
                 <input
-                        class="checkbox-inline"
-                        type="checkbox"
+                        class="form-control gmd"
+                        type="text"
                         name="status"
                         gumga-error
-                        ng-model="periodico.data.status"
+                        ng-model="emprestimo.data.status"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.status">status</label>
+                        gumga-translate-tag="emprestimo.status">status</label>
             </gmd-input>
         </div>
     </div>
 </div>
-
 <div class="row">
-
-
-
-
-
-
-    <div class="col-md-6">
+    <div class="col-md-12">
         <div class="form-group">
-
+		
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
                         name="nome"
                         gumga-error
-                        ng-model="periodico.data.nome"
+                        ng-model="emprestimo.data.nome"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.nome">nome</label>
+                        gumga-translate-tag="emprestimo.nome">nome</label>
             </gmd-input>
         </div>
     </div>
-
-    <div class="col-md-6">
-        <div class="form-group">
-
-            <gmd-input>
-                <input
-                        class="form-control gmd"
-                        type="text"
-                        name="autor"
-                        gumga-error
-                        ng-model="periodico.data.autor"
-                />
-                <span class="bar"></span>
-                <label
-                        class="control-label"
-                        gumga-translate-tag="periodico.autor">autor</label>
-            </gmd-input>
-        </div>
-    </div>
-
-
 </div>
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-12">
         <div class="form-group">
 		
             <gmd-input>
@@ -83,112 +53,118 @@
                         type="text"
                         name="edicao"
                         gumga-error
-                        ng-model="periodico.data.edicao"
+                        ng-model="emprestimo.data.edicao"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.edicao">edicao</label>
+                        gumga-translate-tag="emprestimo.edicao">edicao</label>
             </gmd-input>
         </div>
     </div>
-
-
-    <div class="col-md-2">
+</div>
+<div class="row">
+    <div class="col-md-12">
         <div class="form-group">
-
+		
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
-                        name="volume"
+                        name="autor"
                         gumga-error
-                        ng-model="periodico.data.volume"
+                        ng-model="emprestimo.data.autor"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.volume">volume</label>
+                        gumga-translate-tag="emprestimo.autor">autor</label>
             </gmd-input>
         </div>
     </div>
-
-
-    <div class="col-md-4">
+</div>
+<div class="row">
+    <div class="col-md-12">
         <div class="form-group">
-
+		
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
                         name="editora"
                         gumga-error
-                        ng-model="periodico.data.editora"
+                        ng-model="emprestimo.data.editora"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.editora">editora</label>
+                        gumga-translate-tag="emprestimo.editora">editora</label>
             </gmd-input>
         </div>
     </div>
-
-    <div class="col-md-2">
+</div>
+<div class="row">
+    <div class="col-md-12">
         <div class="form-group">
-
+		
+            <gmd-input>
+                <input
+                        class="form-control gmd"
+                        type="text"
+                        name="volume"
+                        gumga-error
+                        ng-model="emprestimo.data.volume"
+                />
+                <span class="bar"></span>
+                <label
+                        class="control-label"
+                        gumga-translate-tag="emprestimo.volume">volume</label>
+            </gmd-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+		
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
                         name="anoPublicacao"
                         gumga-error
-                        ng-model="periodico.data.anoPublicacao"
+                        ng-model="emprestimo.data.anoPublicacao"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.anoPublicacao">anoPublicacao</label>
+                        gumga-translate-tag="emprestimo.anoPublicacao">anoPublicacao</label>
             </gmd-input>
         </div>
     </div>
-
-    <div class="col-md-2">
+</div>
+<div class="row">
+    <div class="col-md-12">
         <div class="form-group">
-
+		
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
                         name="numPaginas"
                         gumga-error
-                        ng-model="periodico.data.numPaginas"
+                        ng-model="emprestimo.data.numPaginas"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.numPaginas">numPaginas</label>
+                        gumga-translate-tag="emprestimo.numPaginas">numPaginas</label>
             </gmd-input>
         </div>
     </div>
-
 </div>
 <div class="row">
-
-</div>
-<div class="row">
-
-</div>
-<div class="row">
-
-</div>
-<div class="row">
-
-</div>
-<div class="row">
-
-</div>
-<div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <div class="form-group">
 		
             <gmd-input>
@@ -197,77 +173,60 @@
                         type="text"
                         name="origem"
                         gumga-error
-                        ng-model="periodico.data.origem"
+                        ng-model="emprestimo.data.origem"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.origem">origem</label>
+                        gumga-translate-tag="emprestimo.origem">origem</label>
             </gmd-input>
         </div>
     </div>
-
-
-    <div class="col-md-4">
+</div>
+<div class="row">
+    <div class="col-md-12">
         <div class="form-group">
-
+		
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
-                        name="issn"
+                        name="tipoItem"
                         gumga-error
-                        ng-model="periodico.data.issn"
+                        ng-model="emprestimo.data.tipoItem"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.issn">issn</label>
+                        gumga-translate-tag="emprestimo.tipoItem">tipoItem</label>
             </gmd-input>
         </div>
     </div>
-
-    <div class="col-md-4">
+</div>
+<div class="row">
+    <div class="col-md-12">
         <div class="form-group">
-
+		
             <gmd-input>
                 <input
                         class="form-control gmd"
                         type="text"
-                        name="tipoPeriodico"
+                        name="isbn"
                         gumga-error
-                        ng-model="periodico.data.tipoPeriodico"
+                        ng-model="emprestimo.data.isbn"
                 />
                 <span class="bar"></span>
                 <label
                         class="control-label"
-                        gumga-translate-tag="periodico.tipoPeriodico">tipoPeriodico</label>
+                        gumga-translate-tag="emprestimo.isbn">isbn</label>
             </gmd-input>
         </div>
     </div>
-
 </div>
-<div class="row">
-
-</div>
-<div class="row">
-
-</div>
-<div class="row">
-
-</div>
-                    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
-                    <gumga-form-buttons
-                            class="gmd raised"
-                            back="periodico.list"
-                            submit="periodico.methods.put(periodico.data)"
-                            position="right"
-                            valid="PeriodicoForm.$valid"
-                            confirm-dirty="true"
-                            continue="continue">
-                    </gumga-form-buttons>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+	    </div>
+	    <div class="clearfix"></div>
+	    <div class="modal-footer">
+	        <button type="button" class="btn gmd raised btn-primary" ng-click="ok(emprestimo.data)" ng-disabled="Modal.$invalid">OK</button>
+	        <button type="button" class="btn gmd raised btn-warning" ng-click="cancel()">Cancel</button>
+	    </div>
+	</form>
