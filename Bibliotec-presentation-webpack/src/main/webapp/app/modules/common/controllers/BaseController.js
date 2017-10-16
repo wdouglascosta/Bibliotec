@@ -5,6 +5,7 @@ const BaseController = ($timeout, $sce, BaseService, $state, $scope, gumgaContro
     $scope.gumgaMenu = []
     $scope.organizations = []
 
+
     $scope.info = GumgaWebStorage.getSessionStorageItem('user')
 
     $scope.orgAtual = JSON.parse(sessionStorage.getItem('user'))

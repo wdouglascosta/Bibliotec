@@ -1,8 +1,15 @@
 const BaseService = ($http, GumgaRest, $q) => {
     const Service = new GumgaRest()
+var greeting;
 
     Service.getGumgaMenu = () => {
-        return $http.get('./gumga-menu.json')
+        if () {
+            greeting = "Good day";
+            console.log(greeting)
+        }
+console.log("teste ------------------------------------------------------------")
+        // return $http.get('./gumga-menu.json')
+        return $http.get('./menu-usuario.json')
     }
 
     Service.getKeysJsonUrl = () => {
