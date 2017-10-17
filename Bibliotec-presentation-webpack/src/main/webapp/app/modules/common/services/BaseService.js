@@ -8,8 +8,8 @@ var greeting;
         //     console.log(greeting)
         // }
 console.log("teste ------------------------------------------------------------")
-        // return $http.get('./gumga-menu.json')
-        return $http.get('./menu-usuario.json')
+        return $http.get('./gumga-menu.json')
+        // return $http.get('./menu-usuario.json')
     }
 
     Service.getKeysJsonUrl = () => {
