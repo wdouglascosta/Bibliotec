@@ -3,7 +3,7 @@ const BaseController = ($timeout, $sce, BaseService, $state, $scope, gumgaContro
     document.querySelector('.gumga-layout nav.gl-nav').classList.remove('collapsed')
     $scope.keysJsonUrl = []
     $scope.gumgaMenu = []
-    $scope.organizations = []
+    $scope.profiles = ["Usuário", "Balconista"]
 
 
     $scope.info = GumgaWebStorage.getSessionStorageItem('user')
@@ -22,21 +22,25 @@ const BaseController = ($timeout, $sce, BaseService, $state, $scope, gumgaContro
 
     BaseService.listOrganizations()
         .then(function(response) {
-            $scope.organizations = response.data
+            // $scope.organizations = response.data
         })
 
     $scope.navCollapse = function () {
         document.querySelector('.gumga-layout nav.gl-nav').classList.toggle('collapsed')
     }
 
-    $scope.changeOrganization = function(organization) {
-        BaseService.changeOrganization(organization.id)
-            .then(function(response) {
-                var token = response.data.token || JSON.parse(sessionStorage.getItem('user')).token
-                response.data.token = token
-                sessionStorage.setItem('user', JSON.stringify(response.data))
-                location.reload(true)
-            })
+    $scope.changeProfile = function(perfil) {
+        console.log(perfil)
+
+
+
+        // BaseService.changeOrganization(organization.id)
+        //     .then(function(response) {
+        //         var token = response.data.token || JSON.parse(sessionStorage.getItem('user')).token
+        //         response.data.token = token
+        //         sessionStorage.setItem('user', JSON.stringify(response.data))
+        //         location.reload(true)
+        //     })
     }
 
     $scope.logout = function() {

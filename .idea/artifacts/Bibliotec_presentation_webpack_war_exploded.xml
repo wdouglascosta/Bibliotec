@@ -10,7 +10,7 @@
           <element id="archive" name="Bibliotec-domain-0.1-SNAPSHOT.jar">
             <element id="module-output" name="Bibliotec-domain" />
           </element>
-          <element id="library" level="project" name="Maven: io.gumga:gumga-domain:1.5.21" />
+          <element id="library" level="project" name="Maven: io.gumga:gumga-domain:1.5.22" />
           <element id="library" level="project" name="Maven: br.com.insula:opes:1.4.0" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:11.0.2" />
           <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
@@ -26,7 +26,7 @@
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.18.1-GA" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Maven: org.jboss:jandex:1.1.0.Final" />
-          <element id="library" level="project" name="Maven: io.gumga:gumga-core:1.5.21" />
+          <element id="library" level="project" name="Maven: io.gumga:gumga-core:1.5.22" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.12" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-core:3.7.4" />
@@ -41,7 +41,7 @@
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: net.jodah:typetools:0.3.1" />
-          <element id="library" level="project" name="Maven: io.gumga:gumga-validation:1.5.21" />
+          <element id="library" level="project" name="Maven: io.gumga:gumga-validation:1.5.22" />
           <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.9.5" />
           <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-apt:3.4.1" />
           <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-codegen:3.4.1" />
