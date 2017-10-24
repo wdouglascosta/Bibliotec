@@ -11,5 +11,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "gumga-date-ng": "^1.6.0"
+  }
 }

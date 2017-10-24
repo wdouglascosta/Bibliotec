@@ -3,6 +3,7 @@ require('./import-libs');
 require('./import-styles');
 require('./import-modules');
 
+
 angular.module('gumga.core', [
       'gumga.rest',
       'gumga.controller',
