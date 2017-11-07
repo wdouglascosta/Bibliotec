@@ -9,7 +9,6 @@
       <module fileurl="file://$PROJECT_DIR$/Bibliotec-domain/Bibliotec-domain.iml" filepath="$PROJECT_DIR$/Bibliotec-domain/Bibliotec-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bibliotec-gateway/Bibliotec-gateway.iml" filepath="$PROJECT_DIR$/Bibliotec-gateway/Bibliotec-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bibliotec-infrastructure/Bibliotec-infrastructure.iml" filepath="$PROJECT_DIR$/Bibliotec-infrastructure/Bibliotec-infrastructure.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Bibliotec-presentation/Bibliotec-presentation.iml" filepath="$PROJECT_DIR$/Bibliotec-presentation/Bibliotec-presentation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bibliotec-presentation-webpack/Bibliotec-presentation-webpack.iml" filepath="$PROJECT_DIR$/Bibliotec-presentation-webpack/Bibliotec-presentation-webpack.iml" />
     </modules>
   </component>

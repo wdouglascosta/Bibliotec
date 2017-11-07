@@ -12,7 +12,6 @@
         <module name="Bibliotec-domain" />
         <module name="Bibliotec-gateway" />
         <module name="Bibliotec-infrastructure" />
-        <module name="Bibliotec-presentation" />
         <module name="Bibliotec-presentation-webpack" />
       </profile>
     </annotationProcessing>

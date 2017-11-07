@@ -260,7 +260,6 @@
     <module>Bibliotec-application</module>
     <module>Bibliotec-gateway</module>
     <module>Bibliotec-api</module>
-    <module>Bibliotec-presentation</module>
     <module>Bibliotec-presentation-webpack</module>
     <module>Bibliotec-boot</module>
   </modules>

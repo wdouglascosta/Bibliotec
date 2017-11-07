@@ -9,11 +9,12 @@ var greeting;
         // }
 console.log("teste ------------------------------------------------------------")
         return $http.get('./gumga-menu.json')
+        // return $http.get(APILocation.apiLocation + "/public/token/operations/br.com.bibliotec/" + JSON.parse(sessionStorage.getItem("user"))['token'])
         // return $http.get('./menu-usuario.json')
     }
 
     Service.getKeysJsonUrl = () => {
-        return $http.get('./keys.json')
+        return $http.get(APILocation.apiLocation + '/public/token/organizations/' + JSON.parse(sessionStorage.getItem("user"))['token'] + '/')
     }
 
     Service.listOrganizations = () => {
