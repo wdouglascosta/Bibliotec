@@ -1,20 +1,20 @@
 const BaseService = ($http, GumgaRest, $q) => {
     const Service = new GumgaRest()
-var profile
+var greeting;
 
-
-    Service.getGumgaMenu = (profile) => {
-        // if (profile == "Usuário") {
-        //     return $http.get('./menu-usuario.json')
-        // }else if (profile == "Balconista"){
-        //     return $http.get('./gumga-menu.json')
+    Service.getGumgaMenu = () => {
+        // if () {
+        //     greeting = "Good day";
+        //     console.log(greeting)
         // }
-        // return $http.get('./menu-usuario.json')
+console.log("teste ------------------------------------------------------------")
         return $http.get('./gumga-menu.json')
+        // return $http.get(APILocation.apiLocation + "/public/token/operations/br.com.bibliotec/" + JSON.parse(sessionStorage.getItem("user"))['token'])
+        // return $http.get('./menu-usuario.json')
     }
 
     Service.getKeysJsonUrl = () => {
-        return $http.get('./keys.json')
+        return $http.get(APILocation.apiLocation + '/public/token/organizations/' + JSON.parse(sessionStorage.getItem("user"))['token'] + '/')
     }
 
     Service.listOrganizations = () => {
@@ -28,7 +28,11 @@ var profile
         })
     }
 
-
+    Service.changeOrganization = (organizationId) => {
+        var usr = JSON.parse(sessionStorage.getItem('user'))
+        var token = usr.token
+        return $http.get(APILocation.apiLocation + '/public/token/changeorganization/' + token + '/' + organizationId)
+    }
 
 
     return Service

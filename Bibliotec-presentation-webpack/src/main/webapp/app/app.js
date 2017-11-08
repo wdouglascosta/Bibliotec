@@ -2,6 +2,8 @@
 require('./import-libs');
 require('./import-styles');
 require('./import-modules');
+require('../bower_components/gumga-many-to-one-ng/dist/gumga-many-to-one.min');
+require('../bower_components/gumga-date-ng/dist/gumga-date.min');
 
 
 angular.module('gumga.core', [

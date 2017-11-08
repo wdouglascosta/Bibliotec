@@ -1,142 +1,63 @@
 <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-10 col-md-offset-1">
         <div class="panel gmd">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-md-6">
-                        reserva
-                    </div>
-                    <div class="col-md-6">
-                        <span class=" btn pull-right" popover-placement="bottom-right" popover-trigger="'outsideClick'" popover-title="Componentes Utilizados."
-                              uib-popover-html="htmlPopover">
-                            <i class="material-icons">info_outline</i>
-                        </span>
-                    </div>
-                </div>
+            <div class="panel-heading"><label class="control-label" gumga-translate-tag="emprestimo.title"></label>
             </div>
             <div class="panel-body">
-                <form name="reservaForm" class="form-space" gumga-form novalidate>
+                <form name="LivroForm" gumga-form novalidate>
+
+                    <!--inicio da linha -------------------------------------------------------->
                     <div class="row">
-                        <div class="col-md-12">
-                            <gmd-input>
-                                <input type="text" name="nome" ng-model="reserva.data.nome"  class="form-control gmd captalize" gumga-error gumga-required />
-                                <span class="bar"></span>
-                                <label for="nome" class="control-label" gumga-translate-tag="reserva.nome">nome</label>
-                            </gmd-input>
-                        </div>
-                    </div>
-                    <ul class="nav nav-tabs gmd" role="tablist" style="margin-bottom: 3%;">
-                        <li role="presentation" class="active"><a target="_self" href="#principal" aria-controls="principal" role="tab" data-toggle="tab">Rota</a></li>
-                        <li role="presentation"><a href="#comprovantes" target="_self" aria-controls="comprovantes" role="tab" data-toggle="tab">Comprovante</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="principal">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="rota" class="control-label" gumga-translate-tag="reserva.rota"></label>
-                                    <gumga-one-to-many
-                                            children="reserva.data.rota"
-                                            name="Nova Rota"
-                                            class="ng-isolate-scope"
-                                            template-url="app/modules/reserva/views/modalRota.html"
-                                            displayable-property="nome"
-                                            property="nome"
-                                            edit-button-class="gmd btn btn-primary pull-right"
-                                            remove-button-class="gmd btn btn-danger margin-right-10 pull-right"
-                                            controller="ModalRotaController">
-                                    </gumga-one-to-many>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="colaborador" class="control-label" gumga-translate-tag="colaborador.title"></label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="padding-left:3%; padding-right: 3%">
-                                    <gumga-many-to-many
-                                            text-left="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
-                                            text-right="Listando {{$value}} {{$value > 1 ? 'itens': 'item'}}"
-                                            text-heading-left="Disponivel"
-                                            text-heading-right="Selecionados"
-                                            text-left-empty="Vazio"
-                                            text-right-empty="Vazio"
-                                            text-left-placeholder="Filtro"
-                                            text-right-placeholder="Filtro"
-                                            text-moveall-left="Mova todos os itens"
-                                            text-moveall-right="Mova todos os itens"
-                                            left-list="colaborador.data"
-                                            right-list="reserva.data.colaboradores"
-                                            left-search="colaborador.methods.asyncSearch('nome', param)"
-                                            filter-parameters="nome"
-                                            authorize-add="false">
-                                        <left-field><span class="captalize">{{$value.nome}}</span></left-field>
-                                        <right-field><span class="captalize">{{$value.nome}}</span></right-field>
-                                    </gumga-many-to-many>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="nome" gumga-translate-tag="reserva.objetivo">objetivo</label>
-                                    <textarea ng-model="reserva.data.objetivo" class="form-control gmd" gumga-counter="500"></textarea>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <gmd-input>
+                                    <input
+                                            class="form-control gmd"
+                                            type="text"
+                                            name="nome"
+                                            gumga-error
+                                            ng-model="livro.data.nome"
+                                    />
+                                    <span class="bar"></span>
+                                    <label
+                                            class="control-label"
+                                            gumga-translate-tag="livro.nome">nome</label>
+                                </gmd-input>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="comprovantes">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <gumga-file-upload
-                                            model="reserva.data.comprovante"
-                                            attribute="comprovante"
-                                            accepted="{{listAccepted}}"
-                                            max-size="5190"
-                                            on-upload-start="uploadStart()"
-                                            endpoint="{{urlEndpoint}}">
-                                    </gumga-file-upload>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <table class="table table-condensed" ng-show="reserva.data.comprovante.name != ''">
-                                        <thead>
-                                        <tr>
-                                            <th>Comprovante Salvo</th>
-                                            <th style="text-align: right;padding-right: 5%;">Ações</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <th>
-                                                <i class="material-icons">insert_drive_file</i>
-                                                <span style="vertical-align: super;">{{reserva.data.comprovante.name.split("/")[1]}}</span>
-                                            </th>
-                                            <th>
-                                                <span class="pull-right" uib-tooltip="Excluir"><a ng-click="deletePDF()" style="color: red;" class="btn btn-xs gmd"><i class="material-icons">close</i></a></span>
-                                                <span class="pull-right" uib-tooltip="Visualizar"><a ng-click="openPDF()" style="color: #2196F3" class="btn btn-xs gmd"><i class="material-icons">visibility</i></a></span>
-                                            </th>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <gmd-input>
+                                    <input
+                                            class="form-control gmd"
+                                            type="text"
+                                            name="autor"
+                                            gumga-error
+                                            ng-model="livro.data.autor"
+                                    />
+                                    <span class="bar"></span>
+                                    <label
+                                            class="control-label"
+                                            gumga-translate-tag="livro.autor">autor</label>
+                                </gmd-input>
                             </div>
                         </div>
-                    </div>
-                    <div class="row" style="margin-top: 2%;">
-                        <div class="col-md-12">
-                            <gumga-errors placement="right" icon="glyphicon glyphicon-info-sign" label="Campos inválidos" title="Campos inválidos"></gumga-errors>
-                        </div>
-                    </div>
+
+                        <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+
+                        <gumga-form-buttons
+                                class="gmd raised"
+                                back="livro.list"
+                                submit="livro.methods.put(livro.data)"
+                                position="right"
+                                valid="LivroForm.$valid"
+                                confirm-dirty="true"
+                                continue="continue">
+                        </gumga-form-buttons>
                 </form>
-            </div>
-            <div class="panel-footer">
-                <gumga-form-buttons
-                        back="reserva.list"
-                        submit="salvar(reserva.data)"
-                        position="right"
-                        valid="reservaForm.$valid"
-                        confirm-dirty="true"
-                        continue="continue">
-                </gumga-form-buttons>
             </div>
         </div>
     </div>
