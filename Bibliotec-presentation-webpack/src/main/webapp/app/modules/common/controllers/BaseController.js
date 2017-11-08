@@ -47,6 +47,29 @@ const BaseController = ($timeout, $sce, BaseService, $state, $scope, gumgaContro
         sessionStorage.clear();
         $state.go('app.login')
     }
+
+
+    // $http.get('gumga-menu.json')
+    //     .then(function (response) {
+    //         $scope.gumgaMenu = response.data;
+    //     });
+    //
+    // $rootScope.isPermission = function(key){
+    //     $rootScope.keys = $rootScope.keys || [];
+    //     return $rootScope.keys.filter(function(k){
+    //         return k == key;
+    //     }).length > 0;
+
+    // }
+    //
+    // $http.get(APILocation.apiLocation + '/api/permissions')
+    //     .then(function (response) {
+    //         $rootScope.keys = response.data;
+    //         $rootScope.keysMenu = response.data;
+    //     });
+
+
+
 }
 
 BaseController.$inject = ['$timeout', '$sce', 'BaseService', '$state', '$scope', 'gumgaController', '$filter', '$compile', 'GumgaWebStorage']

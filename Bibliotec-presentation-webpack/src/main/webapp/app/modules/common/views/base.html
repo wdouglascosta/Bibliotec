@@ -19,16 +19,10 @@
                                 <i class="material-icons">domain</i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control gmd" data-ng-model="org_search" placeholder="Pesquisar...">
-                                        <div class="bar"></div>
-                                    </div>
-                                </li>
 
                                 <li data-ng-repeat="perfil in profiles">
                                     <a href="" ng-click="changeProfile(perfil)" >{{perfil}}
-                                        <span class="glyphicon glyphicon-ok" ng-show="org.name == orgAtual.organization || org.name == orgAtual.name"></span>
+                                        <!--<span class="glyphicon glyphicon-ok" ng-show="org.name == orgAtual.organization || org.name == orgAtual.name"></span>-->
                                     </a>
                                 </li>
                                 <li role="separator" class="divider"></li>
@@ -36,8 +30,6 @@
                             </ul>
                         </li>
                     </ul>
-
-
 
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -70,7 +62,7 @@
                 <i class="material-icons">menu</i>
             </a>
         </div>
-        <gl-menu menu="gumgaMenu" keys="keysJsonUrl"></gl-menu>
+        <gl-menu menu="gumgaMenu" keys="keysMenu"></gl-menu>
     </nav>
     <footer class="gl-footer footer fixed">
         <p>BiblioTec</p>
