@@ -1,14 +1,15 @@
 target/
 
+.idea
 .apt_generated
 .classpath
 .factorypath
 .project
 .settings
 .springBeans
-.idea
 
-.idea
+
+.idea/
 *.iws
 *.iml
 *.ipr
