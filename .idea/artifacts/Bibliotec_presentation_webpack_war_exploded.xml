@@ -10,7 +10,7 @@
           <element id="archive" name="Bibliotec-domain-0.1-SNAPSHOT.jar">
             <element id="module-output" name="Bibliotec-domain" />
           </element>
-          <element id="library" level="project" name="Maven: io.gumga:gumga-domain:1.5.23" />
+          <element id="library" level="project" name="Maven: io.gumga:gumga-domain:2.0.2-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:4.3.1.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1" />
@@ -22,9 +22,9 @@
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.18.1-GA" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Maven: org.jboss:jandex:1.1.0.Final" />
-          <element id="library" level="project" name="Maven: io.gumga:gumga-core:1.5.23" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.12" />
+          <element id="library" level="project" name="Maven: io.gumga:gumga-core:2.0.2-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.6" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.6" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-core:3.7.4" />
           <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:1.3.9" />
@@ -39,7 +39,7 @@
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: net.jodah:typetools:0.3.1" />
-          <element id="library" level="project" name="Maven: io.gumga:gumga-validation:1.5.23" />
+          <element id="library" level="project" name="Maven: io.gumga:gumga-validation:2.0.2-SNAPSHOT" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
           <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.9.5" />
           <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-apt:3.4.1" />
@@ -47,18 +47,18 @@
           <element id="library" level="project" name="Maven: com.mysema.codegen:codegen:0.6.2" />
           <element id="library" level="project" name="Maven: org.eclipse.jdt.core.compiler:ecj:3.7.2" />
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
-          <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-jpa:3.4.0" />
+          <element id="library" level="project" name="Maven: com.mysema.querydsl:querydsl-jpa:3.7.4" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.7.2.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.9.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.8.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.10.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.2.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.4" />
-          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.10" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.6" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.12" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.1.0.Final" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
           <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.0.0" />
-          <element id="library" level="project" name="Maven: org.hibernate:hibernate-envers:4.3.1.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-envers:4.3.11.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:4.3.1.Final" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.0" />

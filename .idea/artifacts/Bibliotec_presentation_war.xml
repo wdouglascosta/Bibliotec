@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="Bibliotec-presentation:war">
-    <output-path>$PROJECT_DIR$/Bibliotec-presentation/target</output-path>
-    <root id="archive" name="Bibliotec.war">
-      <element id="artifact" artifact-name="Bibliotec-presentation:war exploded" />
-    </root>
-  </artifact>
-</component>

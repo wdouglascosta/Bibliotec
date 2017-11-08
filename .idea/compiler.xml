@@ -10,7 +10,6 @@
         <module name="Bibliotec-application" />
         <module name="Bibliotec-boot" />
         <module name="Bibliotec-domain" />
-        <module name="Bibliotec-gateway" />
         <module name="Bibliotec-infrastructure" />
         <module name="Bibliotec-presentation-webpack" />
       </profile>
@@ -21,9 +20,7 @@
       <module name="Bibliotec-application" target="1.8" />
       <module name="Bibliotec-boot" target="1.8" />
       <module name="Bibliotec-domain" target="1.8" />
-      <module name="Bibliotec-gateway" target="1.8" />
       <module name="Bibliotec-infrastructure" target="1.8" />
-      <module name="Bibliotec-presentation" target="1.8" />
       <module name="Bibliotec-presentation-webpack" target="1.8" />
     </bytecodeTargetLevel>
   </component>

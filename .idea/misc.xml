@@ -2,7 +2,6 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Bibliotec-api" />
-    <file type="web" url="file://$PROJECT_DIR$/Bibliotec-presentation" />
     <file type="web" url="file://$PROJECT_DIR$/Bibliotec-presentation-webpack" />
   </component>
   <component name="MavenProjectsManager">

@@ -38,14 +38,12 @@
 				}
 			]
 	},
-
 	{
 		"type": "item",
 		"label": "Listar Itens",
 		"state": "item.list",
 		"key": "CRUD-Item"
 	},
-
 	{
 		"type": "item",
 		"label": "Página Inicial",
