@@ -17,6 +17,7 @@
                                             type="text"
                                             name="nome"
                                             gumga-error
+                                            required
                                             ng-model="livro.data.nome"
                                     />
                                     <span class="bar"></span>
@@ -45,6 +46,29 @@
                                 </gmd-input>
                             </div>
                         </div>
+                        <!---------------------------------------------------------------------------------------->
+
+<div class="col-md-6">
+                        <form name="manytoone">
+                            <gumga-many-to-one
+                                    value="itemSelecionado"
+                                    list="item.data"
+                                    search-method="item.methods.asyncSearch('nome', param)"
+                                    field="nome"
+                                    authorize-add="false"
+                                    async="true"
+                                    display-info="false">
+                                <match>
+                                    <div>{{match.model.nome}}</div>
+                                </match>
+                            </gumga-many-to-one>
+                        </form>
+
+
+</div>
+
+                        <!---------------------------------------------------------------------------------------->
+
 
                         <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
 

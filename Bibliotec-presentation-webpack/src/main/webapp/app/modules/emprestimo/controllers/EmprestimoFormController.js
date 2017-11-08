@@ -1,11 +1,15 @@
-EmprestimoFormController.$inject = ['EmprestimoService', '$state', 'entity', '$scope', 'gumgaController', 'UsuarioService'];
+EmprestimoFormController.$inject = ['EmprestimoService', '$state', 'entity', '$scope', 'gumgaController', 'UsuarioService', 'ItemService'];
 
-function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gumgaController, UsuarioService) {
+function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gumgaController, UsuarioService, ItemService) {
 
 	gumgaController.createRestMethods($scope, EmprestimoService, 'emprestimo');
 
 
 	gumgaController.createRestMethods($scope, UsuarioService, 'usuario');
+	gumgaController.createRestMethods($scope, ItemService, 'item');
+    $scope.item.execute('get')
+	console.log($scope.item)
+	$scope.itemSelecionado = null;
 	$scope.usuario.methods.search('nome','');
 
 	$scope.usuarioConfig = {};
@@ -25,6 +29,8 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
 			}
 		}
 	};
+
+
 	$scope.continue = {};
 
 	$scope.emprestimo.on('putSuccess',function(data){
@@ -32,8 +38,7 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
 	});
 
 	//-----------------------------------------------------------------------------
-    angular.module('app', ['ui.bootstrap', 'gumga.manytoone'])
-        .controller('Ctrl', function($scope){
+
             $scope.produtos = [
                 { nome: 'Notebook Acer Aspire', id: 1 },
                 { nome: 'Motorola Moto X (2a Geração) 32GB', id: 2 },
@@ -56,7 +61,6 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
                     resolve(arr);
                 })
             };
-        })
 	//-----------------------------------------------------------------------------
 
 }
