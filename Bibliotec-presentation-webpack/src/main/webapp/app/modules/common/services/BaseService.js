@@ -9,8 +9,8 @@ var profile
         // }else if (profile == "Balconista"){
         //     return $http.get('./gumga-menu.json')
         // }
-        return $http.get('./menu-usuario.json')
-        // return $http.get('./gumga-menu.json')
+        // return $http.get('./menu-usuario.json')
+        return $http.get('./gumga-menu.json')
     }
 
     Service.getKeysJsonUrl = () => {
