@@ -10,6 +10,7 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
     $scope.item.execute('get')
 	console.log($scope.item)
 	$scope.itemSelecionado = null;
+    $scope.usuarioSelecionado = null;
 	$scope.usuario.methods.search('nome','');
 
 	$scope.usuarioConfig = {};
@@ -63,6 +64,11 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
             };
 	//-----------------------------------------------------------------------------
 
+	$scope.metodoTeste = function () {
+		var coringa = ($scope.itemSelecionado || {})
+		console.log(coringa);
+
+    }
 }
 
 module.exports = EmprestimoFormController;
