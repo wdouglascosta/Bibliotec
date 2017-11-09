@@ -48,27 +48,41 @@
                         </div>
                         <!---------------------------------------------------------------------------------------->
 
-<div class="col-md-6">
-                        <form name="manytoone">
-                            <gumga-many-to-one
-                                    value="itemSelecionado"
-                                    list="item.data"
-                                    search-method="item.methods.asyncSearch('nome', param)"
-                                    field="nome"
-                                    authorize-add="false"
-                                    async="true"
-                                    display-info="false">
-                                <match>
-                                    <div>{{match.model.nome}}</div>
-                                </match>
-                            </gumga-many-to-one>
-                        </form>
+                        <div class="col-md-6">
+                            <form name="manytoone">
+                                <gumga-many-to-one
+                                        value="itemSelecionado"
+                                        list="item.data"
+                                        search-method="item.methods.asyncSearch('nome', param)"
+                                        field="nome"
+                                        authorize-add="false"
+                                        async="true"
+                                        display-info="false">
+                                    <match>
+                                        <div>{{match.model.nome}}</div>
+                                    </match>
+                                </gumga-many-to-one>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <gumga-many-to-one
+                                        value="usuarioSelecionado"
+                                        list="usuario.data"
+                                        search-method="usuario.methods.asyncSearch('nome', param)"
+                                        field="nome"
+                                        authorize-add="false"
+                                        async="true"
+                                        display-info="false">
 
-
-</div>
-
+                                    <match>
+                                        <div>{{match.model.nome}}</div>
+                                    </match>
+                                </gumga-many-to-one>
+                            </div>
+                        </div>
                         <!---------------------------------------------------------------------------------------->
-
+<button ng-click="metodoTeste()"> testeee </button>
 
                         <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
 
