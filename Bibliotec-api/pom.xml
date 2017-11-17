@@ -18,10 +18,6 @@
             <groupId>br.com.iss</groupId>
             <artifactId>Bibliotec-application</artifactId>
         </dependency>
-        <dependency>
-            <groupId>br.com.iss</groupId>
-            <artifactId>Bibliotec-gateway</artifactId>
-        </dependency>
         <!-- DEPENDENCIAS do Framework GUMGA    -->
         <dependency>
             <groupId>io.gumga</groupId>

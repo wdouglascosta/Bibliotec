@@ -62,16 +62,7 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>br.com.iss</groupId>
-            <artifactId>Bibliotec-api</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>br.com.iss</groupId>
-                    <artifactId>Bibliotec-infrastructure</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+       
 
         <dependency>
             <groupId>org.springframework.data</groupId>
