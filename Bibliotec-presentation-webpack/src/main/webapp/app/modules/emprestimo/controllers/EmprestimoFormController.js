@@ -43,11 +43,6 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
 
 	//-----------------------------------------------------------------------------
 
-	$scope.metodoTeste = function () {
-		var coringa = ($scope.itemSelecionado || {})
-		console.log(coringa);
-
-    }
 }
 
 module.exports = EmprestimoFormController;

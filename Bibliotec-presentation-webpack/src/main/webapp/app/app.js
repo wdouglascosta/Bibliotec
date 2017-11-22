@@ -4,6 +4,8 @@ require('./import-styles');
 require('./import-modules');
 require('../bower_components/gumga-many-to-one-ng/dist/gumga-many-to-one.min');
 require('../bower_components/gumga-date-ng/dist/gumga-date.min');
+require('../bower_components/gumga-one-to-many-ng/dist/gumga-one-to-many.min');
+require('../bower_components/gumga-populate-ng/dist/gumga-populate.min');
 
 
 angular.module('gumga.core', [

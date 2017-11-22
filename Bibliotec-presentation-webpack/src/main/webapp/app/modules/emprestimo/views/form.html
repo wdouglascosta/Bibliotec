@@ -82,7 +82,19 @@
                             </div>
                         </div>
                         <!---------------------------------------------------------------------------------------->
-<button ng-click="metodoTeste()"> testeee </button>
+                        <gumga-one-to-many
+                            name="Novo Cliente"
+                            children="ctrl.clientes"
+                            template-url="modal.html"
+                            size="md"
+                            displayable-property="nome"
+                            controller="ModalClienteController"
+                            property="nome"
+                            edit-button-class="btn btn-primary"
+                            remove-button-class="btn btn-danger"
+                            class="ng-isolate-scope">
+
+                        </gumga-one-to-many>
 
                         <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
 
