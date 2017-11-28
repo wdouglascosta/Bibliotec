@@ -4,3 +4,4 @@ require("../node_modules/animate.css/animate.min.css");
 require('../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css');
 require("../node_modules/gumga-login/dist/gumga-login.min.css");
 require("../gumga-layout/gumga-layout.min.css");
+require("../bower_components/ng-ui-multi-select/dist/ng-ui-multi-select.min.css");

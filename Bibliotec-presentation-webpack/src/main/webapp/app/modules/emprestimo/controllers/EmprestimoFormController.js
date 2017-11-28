@@ -1,12 +1,11 @@
-EmprestimoFormController.$inject = ['EmprestimoService', '$state', 'entity', '$scope', 'gumgaController', 'UsuarioService', 'ItemService'];
+EmprestimoFormController.$inject = ['EmprestimoService', '$state', 'entity', '$scope', 'gumgaController', 'UsuarioService', 'LivroService'];
 
-function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gumgaController, UsuarioService, ItemService) {
+function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gumgaController, UsuarioService, LivroService) {
+
 
 	gumgaController.createRestMethods($scope, EmprestimoService, 'emprestimo');
-
-
 	gumgaController.createRestMethods($scope, UsuarioService, 'usuario');
-	gumgaController.createRestMethods($scope, ItemService, 'item');
+	gumgaController.createRestMethods($scope, LivroService, 'item');
     $scope.item.execute('get')
 	console.log($scope.item)
 	$scope.itemSelecionado = null;
@@ -31,6 +30,18 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
 		}
 	};
 
+    $scope.getOptions = function(viewValue){
+		return LivroService.getAdvancedSearch("obj.nome like '%" + viewValue + "%'")
+			.then(resp => {
+				console.log(resp)
+				$scope.items = resp.data.values
+            })
+        // return LivroService.(new GQuery('nome', Comparison))
+        //     .then(function(resp){
+        //         $scope.items = resp.data;
+        //     })
+    }
+
 
 	$scope.continue = {};
 
@@ -38,35 +49,36 @@ function EmprestimoFormController(EmprestimoService, $state, entity, $scope, gum
 		$state.go('emprestimo.list');
 	});
 
+	$scope.dataEmp = new Date();
+	$scope.dataDev = new Date();
+	$scope.emprestimo.data.dataEmprestimo = $scope.dataEmp;
+    $scope.emprestimo.data.dataDevolucao = $scope.dataDev;
+    $scope.emprestimo.data.dataDevolucao.setDate($scope.emprestimo.data.dataEmprestimo.getDate() + 3)
+
+
+    $scope.dateConfig = {
+        format: 'dd/MM/yyyy HH:mm',
+        showCalendar: true,
+        closeOnChange: false,
+        inputProperties: {
+            class: 'form-control gmd'
+        },
+        change: function(){
+            $scope.emprestimo.data.dataDevolucao = new Date();
+            $scope.emprestimo.data.dataDevolucao.setDate($scope.emprestimo.data.dataEmprestimo.getDate() + 2);
+             console.log($scope.emprestimo.data.dataDevolucao)//FUNCAO EXECUTADA QUANDO HÁ MUDANÇA NA DATA.
+        }
+    }
+
 	//-----------------------------------------------------------------------------
+$scope.salvar = function () {
+}
 
-            $scope.produtos = [
-                { nome: 'Notebook Acer Aspire', id: 1 },
-                { nome: 'Motorola Moto X (2a Geração) 32GB', id: 2 },
-                { nome: 'Smart TV LED 43" Samsung', id: 3 },
-                { nome: 'Ar Condicionado Split 7000 BTU/s', id: 4 }
-            ];
-
-            $scope.produto = $scope.produtos[1];
-
-            $scope.deselectCallback = function(value){
-                console.log(value);
-            }
-
-            // Este método precisa ser assíncrono
-            $scope.getSearch = function(param){
-                return $q(function(resolve){
-                    var arr = $scope.produtos.filter(function(produto){
-                        return produto.nome.indexOf(param) != -1;
-                    })
-                    resolve(arr);
-                })
-            };
 	//-----------------------------------------------------------------------------
 
 	$scope.metodoTeste = function () {
 		var coringa = ($scope.itemSelecionado || {})
-		console.log(coringa);
+		console.log($scope.emprestimo);
 
     }
 }

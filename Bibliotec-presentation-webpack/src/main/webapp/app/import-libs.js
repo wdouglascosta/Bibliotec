@@ -39,3 +39,4 @@ require("script-loader!../node_modules/gumga-list-ng/dist/gumga-list.min");
 require("script-loader!../node_modules/gumga-date-ng/dist/gumga-date.min");
 require("script-loader!../node_modules/gumga-query-action-ng/dist/gumga-query-action.min");
 require("script-loader!../node_modules/my-account-embedded/dist/my-profile-embedded.min");
+require("script-loader!../bower_components/ng-ui-multi-select/dist/ng-ui-multi-select.min");

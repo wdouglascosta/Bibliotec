@@ -2,14 +2,8 @@ const BaseService = ($http, GumgaRest, $q) => {
     const Service = new GumgaRest()
 var greeting;
 
-    Service.getGumgaMenu = () => {
-        // if () {
-        //     greeting = "Good day";
-        //     console.log(greeting)
-        // }
-console.log("teste ------------------------------------------------------------")
-        return $http.get('./gumga-menu.json')
-        // return $http.get(APILocation.apiLocation + "/public/token/operations/br.com.bibliotec/" + JSON.parse(sessionStorage.getItem("user"))['token'])
+    Service.getGumgaMenu = function () {
+        return $http.get('gumga-menu.json');
         // return $http.get('./menu-usuario.json')
     }
 

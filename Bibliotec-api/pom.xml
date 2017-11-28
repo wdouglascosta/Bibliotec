@@ -4,24 +4,24 @@
     <parent>
         <groupId>br.com.iss</groupId>
         <artifactId>Bibliotec</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>Bibliotec-api</artifactId>
     <name>Bibliotec-api</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <dependencies>
         <!-- DEPENDENCIAS de Módulos    -->
         <dependency>
             <groupId>br.com.iss</groupId>
             <artifactId>Bibliotec-application</artifactId>
         </dependency>
-        <dependency>
-            <groupId>br.com.iss</groupId>
-            <artifactId>Bibliotec-gateway</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>br.com.iss</groupId>-->
+            <!--<artifactId>Bibliotec-gateway</artifactId>-->
+        <!--</dependency>-->
         <!-- DEPENDENCIAS do Framework GUMGA    -->
         <dependency>
             <groupId>io.gumga</groupId>
