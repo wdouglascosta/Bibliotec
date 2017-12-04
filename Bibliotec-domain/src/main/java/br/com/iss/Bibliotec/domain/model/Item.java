@@ -1,4 +1,5 @@
 package br.com.iss.Bibliotec.domain.model;
+import com.fasterxml.jackson.annotation.*;
 import io.gumga.domain.GumgaModel; //TODO RETIRAR OS IMPORTS DESNECESSÁRIOS
 import io.gumga.domain.GumgaMultitenancy;
 import java.io.Serializable;
@@ -11,7 +12,6 @@ import org.hibernate.annotations.Columns;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Indexed;
 import org.hibernate.envers.Audited;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @GumgaMultitenancy
 @Audited
@@ -20,6 +20,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
     @Index(name = "Item_gum_oi", columnList = "oi")
 })
 @SequenceGenerator(name = GumgaModel.SEQ_NAME, sequenceName = "SEQ_Item")
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type")
+@JsonSubTypes({
+	@JsonSubTypes.Type(value = Livro.class, name = "Livro"),
+		@JsonSubTypes.Type(value = Periodico.class, name = "Periodico"),
+		@JsonSubTypes.Type(value = AcademPdco.class, name = "AcademPdco")
+})
 public abstract class Item extends GumgaModel<Long> {
 
     @Version
@@ -117,5 +123,11 @@ public abstract class Item extends GumgaModel<Long> {
 	}
 	public void setTipoItem(String tipoItem) {
 		this.tipoItem = tipoItem;
+	}
+
+
+	@JsonGetter
+	public String getType() {
+    	return this.getClass().getSimpleName();
 	}
 }

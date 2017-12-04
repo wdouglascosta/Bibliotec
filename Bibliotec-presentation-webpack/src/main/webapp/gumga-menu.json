@@ -1,231 +1,231 @@
 [
-	{
-		"type": "item",
-		"label": "Reserva",
-		"key": "CRUD-Reserva",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "reserva.insert",
-					"key": "CRUD-Reserva"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "reserva.list",
-					"key": "CRUD-Reserva"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Reserva",
+    "key": "CRUD-Reserva",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "reserva.insert",
+        "key": "CRUD-Reserva"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "reserva.list",
+        "key": "CRUD-Reserva"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Emprestimo",
-		"key": "CRUD-Emprestimo",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "emprestimo.insert",
-					"key": "CRUD-Emprestimo"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "emprestimo.list",
-					"key": "CRUD-Emprestimo"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Emprestimo",
+    "key": "CRUD-Emprestimo",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "emprestimo.insert",
+        "key": "CRUD-Emprestimo"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "emprestimo.list",
+        "key": "CRUD-Emprestimo"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "AcademPdco",
-		"key": "CRUD-AcademPdco",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "academpdco.insert",
-					"key": "CRUD-AcademPdco"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "academpdco.list",
-					"key": "CRUD-AcademPdco"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "AcademPdco",
+    "key": "CRUD-AcademPdco",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "academpdco.insert",
+        "key": "CRUD-AcademPdco"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "academpdco.list",
+        "key": "CRUD-AcademPdco"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Usuario",
-		"key": "CRUD-Usuario",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "usuario.insert",
-					"key": "CRUD-Usuario"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "usuario.list",
-					"key": "CRUD-Usuario"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Usuario",
+    "key": "CRUD-Usuario",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "usuario.insert",
+        "key": "CRUD-Usuario"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "usuario.list",
+        "key": "CRUD-Usuario"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Pessoa",
-		"key": "CRUD-Pessoa",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "pessoa.insert",
-					"key": "CRUD-Pessoa"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "pessoa.list",
-					"key": "CRUD-Pessoa"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Pessoa",
+    "key": "CRUD-Pessoa",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "pessoa.insert",
+        "key": "CRUD-Pessoa"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "pessoa.list",
+        "key": "CRUD-Pessoa"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Periodico",
-		"key": "CRUD-Periodico",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "periodico.insert",
-					"key": "CRUD-Periodico"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "periodico.list",
-					"key": "CRUD-Periodico"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Periodico",
+    "key": "CRUD-Periodico",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "periodico.insert",
+        "key": "CRUD-Periodico"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "periodico.list",
+        "key": "CRUD-Periodico"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Livro",
-		"key": "CRUD-Livro",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "livro.insert",
-					"key": "CRUD-Livro"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "livro.list",
-					"key": "CRUD-Livro"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Livro",
+    "key": "CRUD-Livro",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "livro.insert",
+        "key": "CRUD-Livro"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "livro.list",
+        "key": "CRUD-Livro"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Bibliotecario",
-		"key": "CRUD-Bibliotecario",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "bibliotecario.insert",
-					"key": "CRUD-Bibliotecario"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "bibliotecario.list",
-					"key": "CRUD-Bibliotecario"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Bibliotecario",
+    "key": "CRUD-Bibliotecario",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "bibliotecario.insert",
+        "key": "CRUD-Bibliotecario"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "bibliotecario.list",
+        "key": "CRUD-Bibliotecario"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Balconista",
-		"key": "CRUD-Balconista",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "balconista.insert",
-					"key": "CRUD-Balconista"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "balconista.list",
-					"key": "CRUD-Balconista"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Balconista",
+    "key": "CRUD-Balconista",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "balconista.insert",
+        "key": "CRUD-Balconista"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "balconista.list",
+        "key": "CRUD-Balconista"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Item",
-		"key": "CRUD-Item",
-		"children": [
-				{
-					"type": "item",
-					"label": "Inserir",
-					"state": "item.insert",
-					"key": "CRUD-Item"
-				},
-				{
-					"type": "item",
-					"label": "Listagem",
-					"state": "item.list",
-					"key": "CRUD-Item"
-				}
-			]
-	},
+  {
+    "type": "item",
+    "label": "Item",
+    "key": "CRUD-Item",
+    "children": [
+      {
+        "type": "item",
+        "label": "Inserir",
+        "state": "item.insert",
+        "key": "CRUD-Item"
+      },
+      {
+        "type": "item",
+        "label": "Listagem",
+        "state": "item.list",
+        "key": "CRUD-Item"
+      }
+    ]
+  },
 
-	{
-		"type": "item",
-		"label": "Welcome",
-		"state": "welcome.home",
-		"icon": "home",
-		"key": "CRUD-BASE"
-	},
-	{
-		"type": "item",
-		"label": "Configurations",
-		"icon": "settings",
-		"key": "CONFIGURATION",
-		"children": [
-			{
-				"type": "item",
-				"label": "Custom Fields",
-				"key": "CUSTOMFIELDS",
-				"state": "gumgacustomfield.list",
-				"icon": "text_fields"
-			},
-			{
-				"type": "item",
-				"label": "Tags",
-				"key": "TAGS",
-				"state": "gumgatagdefinition.list",
-				"icon": "label"
-			}
-		]
-	}
+  {
+    "type": "item",
+    "label": "Início",
+    "state": "welcome.home",
+    "icon": "home",
+    "key": "CRUD-BASE"
+  },
+  {
+    "type": "item",
+    "label": "Configurações",
+    "icon": "settings",
+    "key": "CONFIGURATION",
+    "children": [
+      {
+        "type": "item",
+        "label": "Custom Fields",
+        "key": "CUSTOMFIELDS",
+        "state": "gumgacustomfield.list",
+        "icon": "text_fields"
+      },
+      {
+        "type": "item",
+        "label": "Tags",
+        "key": "TAGS",
+        "state": "gumgatagdefinition.list",
+        "icon": "label"
+      }
+    ]
+  }
 ]

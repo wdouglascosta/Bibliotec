@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
-        <div class="panel gmd">
+        <form class="panel gmd">
             <div class="panel-heading"><label class="control-label" gumga-translate-tag="emprestimo.title"></label>
             </div>
             <div class="panel-body">
@@ -8,95 +8,104 @@
 
                     <!--inicio da linha -------------------------------------------------------->
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        <!--<div class="col-md-6">-->
+                        <!--<div class="form-group">-->
 
-                                <gmd-input>
-                                    <input
-                                            class="form-control gmd"
-                                            type="text"
-                                            name="nome"
-                                            gumga-error
-                                            required
-                                            ng-model="livro.data.nome"
-                                    />
-                                    <span class="bar"></span>
-                                    <label
-                                            class="control-label"
-                                            gumga-translate-tag="livro.nome">nome</label>
-                                </gmd-input>
-                            </div>
-                        </div>
+                        <!--<gmd-input>-->
+                        <!--<input-->
+                        <!--class="form-control gmd"-->
+                        <!--type="text"-->
+                        <!--name="nome"-->
+                        <!--gumga-error-->
+                        <!--required-->
+                        <!--ng-model="livro.data.nome"-->
+                        <!--/>-->
+                        <!--<span class="bar"></span>-->
+                        <!--<label-->
+                        <!--class="control-label"-->
+                        <!--gumga-translate-tag="livro.nome">nome</label>-->
+                        <!--</gmd-input>-->
+                        <!--</div>-->
+                        <!--</div>-->
 
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        <!--<div class="col-md-6">-->
+                        <!--<div class="form-group">-->
 
-                                <gmd-input>
-                                    <input
-                                            class="form-control gmd"
-                                            type="text"
-                                            name="autor"
-                                            gumga-error
-                                            ng-model="livro.data.autor"
-                                    />
-                                    <span class="bar"></span>
-                                    <label
-                                            class="control-label"
-                                            gumga-translate-tag="livro.autor">autor</label>
-                                </gmd-input>
-                            </div>
-                        </div>
+                        <!--<gmd-input>-->
+                        <!--<input-->
+                        <!--class="form-control gmd"-->
+                        <!--type="text"-->
+                        <!--name="autor"-->
+                        <!--gumga-error-->
+                        <!--ng-model="livro.data.autor"-->
+                        <!--/>-->
+                        <!--<span class="bar"></span>-->
+                        <!--<label-->
+                        <!--class="control-label"-->
+                        <!--gumga-translate-tag="livro.autor">autor</label>-->
+                        <!--</gmd-input>-->
+                        <!--</div>-->
+                        <!--</div>-->
                         <!---------------------------------------------------------------------------------------->
-
-                        <div class="col-md-6">
-                            <form name="manytoone">
-                                <gumga-many-to-one
-                                        value="itemSelecionado"
-                                        list="item.data"
-                                        search-method="item.methods.asyncSearch('nome', param)"
-                                        field="nome"
-                                        authorize-add="false"
-                                        async="true"
-                                        display-info="false">
-                                    <match>
-                                        <div>{{match.model.nome}}</div>
-                                    </match>
-                                </gumga-many-to-one>
-                            </form>
-                        </div>
-                        <div class="row">
+                        <div class="col-md-10">
                             <div class="col-md-6">
-                                <gumga-many-to-one
-                                        value="usuarioSelecionado"
-                                        list="usuario.data"
-                                        search-method="usuario.methods.asyncSearch('nome', param)"
-                                        field="nome"
-                                        authorize-add="false"
-                                        async="true"
-                                        display-info="false">
-
-                                    <match>
-                                        <div>{{match.model.nome}}</div>
-                                    </match>
-                                </gumga-many-to-one>
+                                <div class="form-group">
+                                    <label>Livros: </label>
+                                    <ui-multi-select placeholder="Buscar..."
+                                                     close-on-select-item="false"
+                                                     ng-model="emprestimo.data.listaLivros"
+                                                     search-options="getOptions(value)">
+                                        <ui-multi-select-item ng-repeat="item in emprestimo.data.listaLivros"
+                                                              ng-value="item">
+                                            {{item.nome}}
+                                        </ui-multi-select-item>
+                                        <ui-multi-select-option ng-repeat="option in items"
+                                                                ng-value="option">
+                                            {{option.nome}}
+                                        </ui-multi-select-option>
+                                    </ui-multi-select>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <gumga-many-to-one
+                                            value="emprestimo.data.usuario"
+                                            list="usuario.data"
+                                            search-method="usuario.methods.asyncSearch('nome', param)"
+                                            field="nome"
+                                            authorize-add="false"
+                                            async="true"
+                                            display-info="false">
+
+                                        <match>
+                                            <div>{{match.model.nome}}</div>
+                                        </match>
+                                    </gumga-many-to-one>
+                                </div>
+                            </div>
+
+
+                            <gumga-date ng-model="emprestimo.data.dataEmprestimo"
+                                        configuration="dateConfig"></gumga-date>
+                            <!--<gumga-date ng-model="dataDevolucao" configuration="dateConfig"></gumga-date>-->
+
+                            <button ng-click="metodoTeste()"></button>
+                            <!---------------------------------------------------------------------------------------->
+
+                            <!--<gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>-->
+
+                            <gumga-form-buttons
+                                    class="gmd raised"
+                                    back="emprestimo.list"
+                                    submit="emprestimo.methods.put(emprestimo.data)"
+                                    position="right"
+                                    confirm-dirty="true"
+                                    continue="continue">
+                            </gumga-form-buttons>
                         </div>
-                        <!---------------------------------------------------------------------------------------->
-<button ng-click="metodoTeste()"> testeee </button>
-
-                        <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
-
-                        <gumga-form-buttons
-                                class="gmd raised"
-                                back="livro.list"
-                                submit="livro.methods.put(livro.data)"
-                                position="right"
-                                valid="LivroForm.$valid"
-                                confirm-dirty="true"
-                                continue="continue">
-                        </gumga-form-buttons>
                 </form>
             </div>
-        </div>
+        </form>
     </div>
+</div>
 </div>

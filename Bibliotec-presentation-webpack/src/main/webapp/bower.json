@@ -13,6 +13,7 @@
   ],
   "dependencies": {
     "gumga-date-ng": "^1.6.0",
-    "gumga-many-to-one-ng": "^1.5.0"
+    "gumga-many-to-one-ng": "^1.5.0",
+    "ng-ui-multi-select": "^1.2.0"
   }
 }
